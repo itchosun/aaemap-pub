@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="기술 기반, 적용 산업, 에이전트 구동 형태로 기업과 제품을 한눈에 탐색하는 에이전틱 AI 생태계 지형도">
+  <title>에이전틱 AI 생태계 지도 | Agentic AI Alliance</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232563EB'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='18' font-weight='bold' fill='white' text-anchor='middle'%3EA·%3C/text%3E%3C/svg%3E">
+  <link rel="alternate icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/style.css?v=20261020_01">
+</head>
+
+<body>
+  <!-- 1. 시연용 비밀번호 게이트 (설정에서 비활성화 가능) -->
+  <div id="gate-overlay" class="gate-overlay" role="dialog" aria-modal="true" aria-labelledby="gate-title"
+    style="display: none;">
+    <div class="gate-card">
+      <div class="gate-brand-mark">A·</div>
+      <p class="gate-eyebrow">Agentic AI Alliance</p>
+      <h2 id="gate-title" class="gate-title">시연 및 검수용 접속</h2>
+      <p class="gate-desc">에이전틱 AI 생태계 지형도를 확인하려면 비밀번호를 입력해 주세요.</p>
+      <form id="gate-form" class="gate-form">
+        <label for="gate-password" class="sr-only">비밀번호</label>
+        <div class="gate-input-group">
+          <input type="password" id="gate-password" placeholder="비밀번호 입력" required autocomplete="current-password"
+            autofocus>
+          <button type="submit" id="gate-submit-btn">입장</button>
+        </div>
+        <p id="gate-error" class="gate-error" role="alert" style="display: none;"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. 메인 웹사이트 컨텐츠 셸 -->
+  <div id="site-shell" class="site-shell">
+    <!-- 관리자 모드 활성 알림 바 (관리자 모드 활성화 시 표시) -->
+    <div id="admin-status-banner" class="admin-status-banner" style="display: none;">
+      <div class="container admin-banner-container">
+        <div class="admin-banner-info">
+          <span class="admin-banner-badge">관리자 모드</span>
+          <span class="admin-banner-text">현재 <strong>관리자 모드</strong>가 활성화되어 있습니다. (출처·조사 및 설문 관리 정보가 표시됩니다)</span>
+        </div>
+        <button type="button" id="admin-mode-exit-btn" class="admin-exit-btn">관리자 모드 종료</button>
+      </div>
+    </div>
+
+    <!-- 헤더 / Hero 섹션 -->
+    <header class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-meta-row">
+          <div class="hero-brand">
+            <span class="brand-badge">A·</span>
+            <span class="brand-name">Agentic AI Alliance</span>
+          </div>
+          <span class="hero-project-tag">NIA × IT조선 공동 프로젝트</span>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">에이전틱 AI 생태계를<br>한눈에 탐색하세요</h1>
+          <p class="hero-summary">
+            국내 에이전틱 AI 기업들의 기술 기반, 적용 산업, 에이전트 구동 형태를 입체적으로 조망하는 종합 지형도형 디렉터리입니다.
+          </p>
+        </div>
+
+        <!-- 핵심 통계 지표 (JSON 실데이터 기반 동적 계산) -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">등록 조직</span>
+            <strong class="stat-value" id="stat-total-orgs">-</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">등록 제품·서비스</span>
+            <strong class="stat-value" id="stat-total-prds">-</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">분류 완료 기업</span>
+            <strong class="stat-value" id="stat-classified-orgs">-</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">생태계 지원 기관</span>
+            <strong class="stat-value" id="stat-unclassified-orgs">-</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 탐색 관점 탭 (보기 방식) -->
+    <nav class="perspective-nav" aria-label="탐색 관점">
+      <div class="container perspective-nav-container">
+        <span class="perspective-label">보기 방식</span>
+        <div class="perspective-tabs" role="tablist">
+          <button type="button" class="tab-btn active" data-tab="products" id="tab-products" aria-selected="true"
+            role="tab" aria-controls="view-products">
+            <span class="tab-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </span>
+            제품·서비스 지형도
+          </button>
+          <button type="button" class="tab-btn" data-tab="industry" id="tab-industry" aria-selected="false" role="tab"
+            aria-controls="view-industry" tabindex="-1">
+            <span class="tab-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </span>
+            산업·업무 지형도
+          </button>
+          <button type="button" class="tab-btn" data-tab="companies" id="tab-companies" aria-selected="false" role="tab"
+            aria-controls="view-companies" tabindex="-1">
+            <span class="tab-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </span>
+            기업 디렉터리
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 검색 및 필터 컨트롤 바 -->
+    <section class="controls-section" aria-label="검색 및 필터">
+      <div class="container">
+        <div class="controls-bar">
+          <div class="search-box">
+            <span class="search-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+            </span>
+            <input type="search" id="search-input" placeholder="기업명, 제품명, 기술, 활용 사례 검색" autocomplete="off">
+            <button type="button" id="search-clear-btn" class="search-clear-btn" style="display: none;"
+              aria-label="검색어 지우기">&times;</button>
+          </div>
+
+          <div class="filter-actions">
+            <button type="button" id="filter-toggle-btn" class="filter-toggle-btn" aria-expanded="false"
+              aria-controls="filter-panel">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+              </svg>
+              <span>상세 필터</span>
+              <span id="filter-count-badge" class="filter-count-badge" style="display: none;">0</span>
+            </button>
+            <button type="button" id="filter-reset-btn" class="filter-reset-btn" title="모든 검색어와 필터 초기화">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+                <path d="M3 3v5h5" />
+              </svg>
+              초기화
+            </button>
+          </div>
+        </div>
+
+        <!-- 현재 검색/필터 결과 요약 및 표시 방식(간략히/자세히) 선택 -->
+        <div class="results-summary-row">
+          <div class="results-summary" id="results-summary" aria-live="polite">
+            <span id="results-count-text">데이터 로딩 중...</span>
+          </div>
+          <div class="display-mode-selector" role="group" aria-label="표시 방식 선택">
+            <button type="button" class="display-mode-btn active" id="btn-mode-compact" data-mode="compact"
+              aria-pressed="true">간략히</button>
+            <button type="button" class="display-mode-btn" id="btn-mode-detailed" data-mode="detailed"
+              aria-pressed="false">자세히</button>
+          </div>
+        </div>
+
+        <!-- 선택한 필터값 상세 표시 (한줄한줄 표시) -->
+        <div class="selected-filters-display" id="selected-filters-display" style="display: none;"></div>
+      </div>
+    </section>
+
+    <!-- 메인 컨텐츠 영역 -->
+    <main class="main-content">
+      <div class="container">
+        <!-- 1. 제품 중심 지형도 뷰 (기본) -->
+        <section id="view-products" class="landscape-view" aria-label="제품 중심 지형도"></section>
+
+        <!-- 2. 산업·업무 지형도 뷰 -->
+        <section id="view-industry" class="landscape-view" aria-label="산업·업무 지형도" style="display: none;"></section>
+
+        <!-- 3. 기업 디렉터리 뷰 -->
+        <section id="view-companies" class="all-orgs-view" aria-label="기업 디렉터리" style="display: none;">
+          <!-- 초성 퀵점프 내비게이션 -->
+          <div class="choseong-nav-wrapper">
+            <div class="choseong-nav" id="choseong-nav" aria-label="초성 바로가기"></div>
+          </div>
+          <div class="all-orgs-container" id="all-orgs-container"></div>
+        </section>
+
+        <!-- 검색 시 미분류 기업 일치 결과 섹션 -->
+        <section id="unclassified-search-section" class="unclassified-search-section" style="display: none;">
+          <div class="unclassified-search-header">
+            <h3 class="unclassified-search-title">기업명 일치 · 분류 정보 없음</h3>
+            <span class="unclassified-search-note">기술·산업 분류 정보가 준비 중인 기업입니다.</span>
+          </div>
+          <div class="unclassified-search-grid" id="unclassified-search-grid"></div>
+        </section>
+
+        <!-- 결과 없음 (Empty State) -->
+        <div id="view-empty" class="empty-state" style="display: none;">
+          <div class="empty-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+              <path d="M8 11h6" />
+            </svg>
+          </div>
+          <h3 class="empty-title">조건에 맞는 제품이 없습니다</h3>
+          <p class="empty-desc">선택한 검색어나 필터 조건에 부합하는 제품이 없습니다. 필터를 재설정해 보세요.</p>
+          <button type="button" id="empty-reset-btn" class="btn-primary">필터 전체 초기화</button>
+        </div>
+
+        <!-- 하단 생태계 지원 기관·협회 아코디언 섹션 -->
+        <section class="unclassified-section" aria-label="생태계 지원 기관 및 협회">
+          <div class="accordion-card">
+            <button type="button" class="accordion-header" id="unclassified-accordion-btn" aria-expanded="false"
+              aria-controls="unclassified-accordion-body">
+              <div class="accordion-header-left">
+                <span class="accordion-title">생태계 지원 기관 및 협회</span>
+                <span class="accordion-badge" id="unclassified-count-badge">0곳</span>
+              </div>
+              <div class="accordion-header-right">
+                <span class="accordion-desc">AI 생태계 정책·인증·육성을 지원하는 기관·협회입니다</span>
+                <svg class="accordion-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </div>
+            </button>
+            <div id="unclassified-accordion-body" class="accordion-body" style="display: none;" aria-hidden="true">
+              <div class="unclassified-grid" id="unclassified-orgs-grid"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-left">
+          <p class="footer-title"><strong>Agentic AI Alliance</strong> — 에이전틱 AI 생태계 지도</p>
+          <p class="footer-sub">NIA(한국지능정보사회진흥원) × IT조선 공동 기획 프로젝트</p>
+          <p class="footer-contact" id="footer-contact">문의 또는 업데이트 사항이 있으실 땐, <a
+              href="mailto:aitech@chosunbiz.com">aitech@chosunbiz.com</a>으로 연락주세요.</p>
+        </div>
+        <div class="footer-right">
+          <p class="footer-copy">© 2026 Agentic AI Alliance. All rights reserved.</p>
+          <button type="button" id="admin-mode-toggle-btn" class="footer-admin-btn">관리자 모드</button>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 좌측 상세 필터 Drawer -->
+  <div id="filter-drawer-backdrop" class="drawer-backdrop" aria-hidden="true" style="display: none;"></div>
+  <aside id="filter-drawer" class="filter-drawer" role="dialog" aria-modal="true" aria-labelledby="filter-drawer-title"
+    aria-hidden="true" style="display: none;">
+    <div class="filter-drawer-header">
+      <div class="filter-drawer-title-group">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+        </svg>
+        <h3 id="filter-drawer-title" class="filter-drawer-title">상세 필터 설정</h3>
+        <span id="filter-drawer-count-badge" class="filter-count-badge" style="display: none;">0</span>
+      </div>
+      <div class="filter-drawer-header-actions">
+        <button type="button" id="filter-drawer-reset-btn" class="filter-drawer-reset-btn" title="필터 초기화">초기화</button>
+        <button type="button" id="filter-drawer-close-btn" class="drawer-close-btn" aria-label="필터 패널 닫기">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="filter-drawer-body" id="filter-drawer-body" tabindex="-1">
+      <div class="filter-drawer-section">
+        <h4 class="filter-col-title">기술 영역</h4>
+        <div class="filter-checkbox-list" id="filter-list-tech"></div>
+      </div>
+      <div class="filter-drawer-section">
+        <h4 class="filter-col-title">산업·업무 영역</h4>
+        <div class="filter-checkbox-list" id="filter-list-industry"></div>
+      </div>
+      <div class="filter-drawer-section">
+        <h4 class="filter-col-title">에이전트 구동 형태</h4>
+        <div class="filter-checkbox-list" id="filter-list-operating"></div>
+      </div>
+      <div class="filter-drawer-section">
+        <h4 class="filter-col-title">조직 유형</h4>
+        <div class="filter-checkbox-list" id="filter-list-type"></div>
+      </div>
+    </div>
+
+    <div class="filter-drawer-footer">
+      <button type="button" id="filter-drawer-apply-btn" class="btn-primary filter-drawer-apply-btn">
+        결과 확인하기 (<span id="filter-drawer-results-count">0개</span>)
+      </button>
+    </div>
+  </aside>
+
+  <!-- 3. 상세 정보 Drawer 패널 (제품 상세 / 조직 상세 모드) -->
+  <div id="drawer-backdrop" class="drawer-backdrop" aria-hidden="true" style="display: none;"></div>
+  <aside id="detail-drawer" class="detail-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title"
+    aria-hidden="true" style="display: none;">
+    <div class="drawer-header">
+      <div class="drawer-header-left">
+        <button type="button" id="drawer-back-btn" class="drawer-back-btn" style="display: none;"
+          aria-label="기업 정보로 돌아가기">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+          <span>기업 정보로 돌아가기</span>
+        </button>
+      </div>
+      <button type="button" id="drawer-close-btn" class="drawer-close-btn" aria-label="상세 패널 닫기">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-body" id="drawer-body" tabindex="-1">
+      <!-- 제품 상세 모드 -->
+      <div id="drawer-product-mode" class="drawer-content-mode">
+        <div class="drawer-top-org">
+          <span class="drawer-org-initial" id="dp-org-initial"></span>
+          <div class="drawer-org-names">
+            <span class="drawer-org-display" id="dp-org-display"></span>
+            <span class="drawer-org-official" id="dp-org-official"></span>
+          </div>
+        </div>
+        <!-- 기업 로고 표시 영역 -->
+        <div class="drawer-org-logo-container" id="dp-org-logo-container" style="display: none;">
+          <img id="dp-org-logo-img" class="drawer-org-logo-img" alt="" />
+        </div>
+        <div class="drawer-section" id="dp-sec-company" style="display: none;">
+          <h4 class="drawer-sec-heading">기업 개요</h4>
+          <p class="drawer-sec-text" id="dp-company-desc"></p>
+          <div id="dp-company-sources" class="drawer-sources-container admin-only-block"></div>
+        </div>
+        <h2 class="drawer-title" id="dp-product-name"></h2>
+        <div class="drawer-meta-grid" id="dp-meta-grid"></div>
+        <div class="drawer-section" id="dp-sec-desc">
+          <h4 class="drawer-sec-heading">제품 개요</h4>
+          <p class="drawer-sec-text" id="dp-desc"></p>
+        </div>
+        <div class="drawer-section" id="dp-sec-tech">
+          <h4 class="drawer-sec-heading">핵심 기술</h4>
+          <p class="drawer-sec-text" id="dp-core-tech"></p>
+        </div>
+        <div class="drawer-section" id="dp-sec-market">
+          <h4 class="drawer-sec-heading">타깃 시장</h4>
+          <p class="drawer-sec-text" id="dp-target-market"></p>
+        </div>
+        <div class="drawer-section" id="dp-sec-competitors">
+          <h4 class="drawer-sec-heading">주요 경쟁사 및 유사 서비스</h4>
+          <p class="drawer-sec-text" id="dp-competitors"></p>
+        </div>
+        <div class="drawer-section" id="dp-sec-competitiveness">
+          <h4 class="drawer-sec-heading">핵심 경쟁력</h4>
+          <p class="drawer-sec-text" id="dp-core-competitiveness"></p>
+        </div>
+        <div class="drawer-section" id="dp-sec-diff">
+          <h4 class="drawer-sec-heading">차별점</h4>
+          <p class="drawer-sec-text" id="dp-diff"></p>
+        </div>
+        <div class="drawer-section" id="dp-sec-cases">
+          <h4 class="drawer-sec-heading">주요 활용 사례</h4>
+          <p class="drawer-sec-text" id="dp-use-cases"></p>
+        </div>
+        <div class="drawer-section" id="dp-sec-custom-domain">
+          <h4 class="drawer-sec-heading">기타 산업 설명</h4>
+          <p class="drawer-sec-text" id="dp-custom-domain"></p>
+        </div>
+        <div class="drawer-actions" id="dp-actions">
+          <a href="#" id="dp-website-btn" class="btn-website" target="_blank" rel="noopener noreferrer"
+            style="display: none;">
+            <span>공식 웹사이트 방문</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 조직 상세 모드 -->
+      <div id="drawer-org-mode" class="drawer-content-mode" style="display: none;">
+        <div class="drawer-top-org">
+          <span class="drawer-org-initial" id="do-org-initial"></span>
+          <div class="drawer-org-names">
+            <h2 class="drawer-title" id="do-org-display" style="margin: 0;"></h2>
+            <span class="drawer-org-official" id="do-org-official"></span>
+          </div>
+        </div>
+        <!-- 기업 로고 표시 영역 -->
+        <div class="drawer-org-logo-container" id="do-org-logo-container" style="display: none;">
+          <img id="do-org-logo-img" class="drawer-org-logo-img" alt="" />
+        </div>
+        <div class="drawer-meta-grid" id="do-meta-grid"></div>
+        <div class="drawer-section" id="do-sec-company" style="display: none;">
+          <h4 class="drawer-sec-heading">기업 소개</h4>
+          <p class="drawer-sec-text" id="do-company-desc"></p>
+          <div id="do-company-sources" class="drawer-sources-container admin-only-block"></div>
+        </div>
+        <div class="drawer-section" id="do-sec-products">
+          <h4 class="drawer-sec-heading">등록 제품 및 서비스 (<span id="do-product-count">0</span>)</h4>
+          <div class="drawer-org-products-list" id="do-products-list"></div>
+          <p class="drawer-no-products-msg" id="do-no-products-msg" style="display: none;">
+            아직 제품·기술 분류 정보가 등록되지 않았습니다.
+          </p>
+        </div>
+        <div class="drawer-actions" id="do-actions">
+          <a href="#" id="do-website-btn" class="btn-website" target="_blank" rel="noopener noreferrer"
+            style="display: none;">
+            <span>공식 웹사이트 방문</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 4. 관리자 모드 인증 모달 -->
+  <div id="admin-modal" class="admin-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="admin-modal-title"
+    style="display: none;">
+    <div class="admin-modal-card">
+      <div class="admin-modal-header">
+        <h3 id="admin-modal-title" class="admin-modal-title">관리자 모드 인증</h3>
+        <p class="admin-modal-desc">출처 및 설문 관리 정보를 확인하려면 비밀번호를 입력해 주세요.</p>
+      </div>
+      <form id="admin-modal-form" class="admin-modal-form">
+        <label for="admin-password-input" class="sr-only">관리자 비밀번호</label>
+        <div class="admin-input-group">
+          <input type="password" id="admin-password-input" class="admin-modal-input" placeholder="비밀번호 입력" required
+            autocomplete="current-password">
+        </div>
+        <p id="admin-error-msg" class="admin-modal-error" style="display: none;" role="alert"></p>
+        <div class="admin-modal-actions">
+          <button type="button" id="admin-modal-cancel-btn" class="btn-admin-cancel">취소</button>
+          <button type="submit" id="admin-modal-submit-btn" class="btn-admin-submit">인증</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ES 모듈 메인 스크립트 엔트리포인트 -->
+  <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
