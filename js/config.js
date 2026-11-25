@@ -25,13 +25,13 @@ export const CONTACT_CONFIG = {
   prefixText: "문의 또는 업데이트 사항이 있으실 땐, ",
 
   // 링크 표시명 (이메일 주소 또는 추후 폼 명칭)
-  linkText: "aitech@chosunbiz.com",
+  linkText: "문의 접수 폼",
 
   // 링크 주소 (현재: mailto:, 추후: 구글폼 등 URL로 교체 가능)
-  linkUrl: "mailto:aitech@chosunbiz.com",
+  linkUrl: "https://forms.gle/45khxgLhxoGPPxtb6",
 
   // 문의 안내 문구 접미사
-  suffixText: "으로 연락주세요.",
+  suffixText: "을 이용해 주세요.",
 };
 
 

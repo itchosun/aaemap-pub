@@ -130,6 +130,10 @@ class App {
       const a = document.createElement("a");
       a.href = CONTACT_CONFIG.linkUrl;
       a.textContent = CONTACT_CONFIG.linkText;
+      if (/^https?:\/\//i.test(CONTACT_CONFIG.linkUrl)) {
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+      }
       el.appendChild(a);
     }
     if (CONTACT_CONFIG.suffixText) {
