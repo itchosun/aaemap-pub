@@ -380,14 +380,24 @@ class App {
   }
 
   /**
+   * 설문(1차·2차·통합) 응답 여부 판별 (제품 등록 여부 제외)
+   */
+  hasSurveyResponse(org) {
+    return Boolean(org && (org.has_survey1 || org.has_survey2 || org.has_integrated_survey));
+  }
+
+  /**
    * 간략히 보기 전용 조직명 칩(버튼) 요소 생성
    * - 설명·제품명·제품 설명·태그·이니셜 배지 없이 조직 이름만 표시
+   * - 1차·2차·통합 설문 응답 기업에는 왼쪽 컬러 테두리 클래스 적용
    * - 클릭 및 키보드 선택 시 상세 drawer 열기
    */
   createCompactOrgChip(org) {
     const chip = document.createElement("button");
     chip.type = "button";
-    chip.className = "compact-org-chip";
+    chip.className = this.hasSurveyResponse(org)
+      ? "compact-org-chip has-survey"
+      : "compact-org-chip";
     chip.textContent = org.display_name || "";
     chip.setAttribute("aria-label", `${org.display_name} 상세 정보 보기`);
 
@@ -567,25 +577,25 @@ class App {
     } else {
       if (isAdmin) {
         if (view === "products" || view === "industry") {
-          this.resultsCountText.textContent = `제품 ${totalMatchingPrds}개 · 조사 기업 ${totalMatchingEditorials}곳 · 전체 기업 ${totalMatchingOrgs}곳`;
+          this.resultsCountText.textContent = `전체 기업 ${totalMatchingOrgs}곳 · 제품 ${totalMatchingPrds}개 · 조사 기업 ${totalMatchingEditorials}곳`;
         } else {
           this.resultsCountText.textContent = `전체 기업 ${totalMatchingOrgs}곳 (제품 등록 ${totalMatchingPrds}개 · 조사 기업 ${totalMatchingEditorials}곳)`;
         }
         if (this.filterDrawerResultsCount) {
           this.filterDrawerResultsCount.textContent = (view === "companies")
             ? `기업 ${totalMatchingOrgs}곳`
-            : `항목 ${totalMatchingPrds + totalMatchingEditorials}개 (기업 ${totalMatchingOrgs}곳)`;
+            : `기업 ${totalMatchingOrgs}곳 (항목 ${totalMatchingPrds + totalMatchingEditorials}개)`;
         }
       } else {
         if (view === "products" || view === "industry") {
-          this.resultsCountText.textContent = `제품 ${totalMatchingPrds}개 · 기업 ${totalMatchingOrgs}곳`;
+          this.resultsCountText.textContent = `기업 ${totalMatchingOrgs}곳 · 제품 ${totalMatchingPrds}개`;
         } else {
           this.resultsCountText.textContent = `전체 기업 ${totalMatchingOrgs}곳 (제품 등록 ${totalMatchingPrds}개)`;
         }
         if (this.filterDrawerResultsCount) {
           this.filterDrawerResultsCount.textContent = (view === "companies")
             ? `기업 ${totalMatchingOrgs}곳`
-            : `제품 ${totalMatchingPrds}개 · 기업 ${totalMatchingOrgs}곳`;
+            : `기업 ${totalMatchingOrgs}곳 · 제품 ${totalMatchingPrds}개`;
         }
       }
     }
@@ -652,6 +662,28 @@ class App {
       this.selectedFiltersDisplay.style.display = "none";
       this.selectedFiltersDisplay.innerHTML = "";
     }
+  }
+
+  /**
+   * 구역별 집계 문자열 생성 (기업 수 우선 표기)
+   */
+  formatDomainCounts(orgCount, prdCount, editorialCount, isCompact, isAdmin) {
+    if (isCompact) {
+      return `기업 ${orgCount}곳`;
+    }
+    if (isAdmin) {
+      if (prdCount > 0 && editorialCount > 0) {
+        return `기업 ${orgCount}곳 · 제품 ${prdCount}개 · 조사 기업 ${editorialCount}곳`;
+      }
+      if (prdCount > 0) {
+        return `기업 ${orgCount}곳 · 제품 ${prdCount}개`;
+      }
+      return `기업 ${orgCount}곳 · 조사 기업 ${editorialCount}곳`;
+    }
+    if (prdCount > 0) {
+      return `기업 ${orgCount}곳 · 제품 ${prdCount}개`;
+    }
+    return `기업 ${orgCount}곳`;
   }
 
   /**
@@ -733,24 +765,13 @@ class App {
       counts.className = "domain-counts";
       const isAdmin = this.adminManager?.isAdmin || false;
       const isCompact = this.displayMode === "compact";
-
-      if (isCompact) {
-        counts.textContent = `기업 ${domainOrgIds.size}곳`;
-      } else if (isAdmin) {
-        if (domainPrds > 0 && domainEditorials > 0) {
-          counts.textContent = `제품 ${domainPrds}개 · 조사 기업 ${domainEditorials}곳 (기업 ${domainOrgIds.size}곳)`;
-        } else if (domainPrds > 0) {
-          counts.textContent = `제품 ${domainPrds}개 · 기업 ${domainOrgIds.size}곳`;
-        } else {
-          counts.textContent = `조사 기업 ${domainEditorials}곳 (기업 ${domainOrgIds.size}곳)`;
-        }
-      } else {
-        if (domainPrds > 0) {
-          counts.textContent = `제품 ${domainPrds}개 · 기업 ${domainOrgIds.size}곳`;
-        } else {
-          counts.textContent = `기업 ${domainOrgIds.size}곳`;
-        }
-      }
+      counts.textContent = this.formatDomainCounts(
+        domainOrgIds.size,
+        domainPrds,
+        domainEditorials,
+        isCompact,
+        isAdmin
+      );
 
       titleWrap.appendChild(title);
       titleWrap.appendChild(counts);
@@ -898,24 +919,13 @@ class App {
       counts.className = "domain-counts";
       const isAdmin = this.adminManager?.isAdmin || false;
       const isCompact = this.displayMode === "compact";
-
-      if (isCompact) {
-        counts.textContent = `기업 ${domainOrgIds.size}곳`;
-      } else if (isAdmin) {
-        if (domainPrds > 0 && domainEditorials > 0) {
-          counts.textContent = `제품 ${domainPrds}개 · 조사 기업 ${domainEditorials}곳 (기업 ${domainOrgIds.size}곳)`;
-        } else if (domainPrds > 0) {
-          counts.textContent = `제품 ${domainPrds}개 · 기업 ${domainOrgIds.size}곳`;
-        } else {
-          counts.textContent = `조사 기업 ${domainEditorials}곳 (기업 ${domainOrgIds.size}곳)`;
-        }
-      } else {
-        if (domainPrds > 0) {
-          counts.textContent = `제품 ${domainPrds}개 · 기업 ${domainOrgIds.size}곳`;
-        } else {
-          counts.textContent = `기업 ${domainOrgIds.size}곳`;
-        }
-      }
+      counts.textContent = this.formatDomainCounts(
+        domainOrgIds.size,
+        domainPrds,
+        domainEditorials,
+        isCompact,
+        isAdmin
+      );
 
       titleWrap.appendChild(title);
       titleWrap.appendChild(counts);
@@ -1283,7 +1293,9 @@ class App {
           }
 
           const card = document.createElement("div");
-          card.className = "org-card";
+          card.className = this.hasSurveyResponse(org)
+            ? "org-card has-survey"
+            : "org-card";
           card.tabIndex = 0;
           card.role = "button";
           card.setAttribute("aria-label", `${org.display_name} 기업 상세 보기`);
