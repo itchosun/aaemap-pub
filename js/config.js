@@ -6,18 +6,18 @@ export const APP_CONFIG = {
   GATE_ENABLED: true,
 
   // 솔트 키 (레인보우 테이블 및 사전 공격 무력화)
-  SALT: "itchosun*",
+  SALT: "admin*",
 
   // 비밀번호 + 솔트의 SHA-256 해시값
-  PASSWORD_HASH: "de3fb2e7480bee99aa8f452a53e4c26273352a9719169c8217a399ec64fe3907",
+  PASSWORD_HASH: "da046314241ff9e1df9ab31db0c7d2247576cf99c95fcb0176f8bd72408d6421",
 };
 
 export const ADMIN_CONFIG = {
-  // 관리자 모드 솔트 키
-  SALT: "itchosun_admin*",
+  // 데이터 출처 보기 솔트 키
+  SALT: "administrator*",
 
-  // 비밀번호("itchosun") + 솔트의 SHA-256 해시값
-  PASSWORD_HASH: "374bffd1e84206c6bff91c123decdd8c08e3eca5d1938c4affae3c8c0a8bf977",
+  // 비밀번호 + 솔트의 SHA-256 해시값
+  PASSWORD_HASH: "1c6c6e9f911e4c64af41b288ed0aa883e6e5e6e5ae7f57e1903f49f9f2796d7d",
 };
 
 export const CONTACT_CONFIG = {

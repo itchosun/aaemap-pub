@@ -176,17 +176,17 @@ export class AdminManager {
       document.body.classList.add("admin-mode");
       if (this.statusBanner) this.statusBanner.style.display = "block";
       if (this.toggleBtn) {
-        this.toggleBtn.textContent = "관리자 모드 종료";
+        this.toggleBtn.textContent = "데이터 출처 보기 종료";
         this.toggleBtn.classList.add("active");
-        this.toggleBtn.title = "현재 관리자 모드 활성 중 (클릭 시 종료)";
+        this.toggleBtn.title = "현재 데이터 출처 보기 활성 중 (클릭 시 종료)";
       }
     } else {
       document.body.classList.remove("admin-mode");
       if (this.statusBanner) this.statusBanner.style.display = "none";
       if (this.toggleBtn) {
-        this.toggleBtn.textContent = "관리자 모드";
+        this.toggleBtn.textContent = "데이터 출처 보기";
         this.toggleBtn.classList.remove("active");
-        this.toggleBtn.title = "관리자 모드로 전환";
+        this.toggleBtn.title = "데이터 출처 보기로 전환";
       }
     }
 
