@@ -73,6 +73,7 @@ class App {
     this.unclassifiedAccordionBody = document.getElementById("unclassified-accordion-body");
     this.unclassifiedOrgsGrid = document.getElementById("unclassified-orgs-grid");
     this.unclassifiedCountBadge = document.getElementById("unclassified-count-badge");
+    this.scrollTopBtn = document.getElementById("scroll-top-btn");
   }
 
   async start() {
@@ -355,6 +356,27 @@ class App {
         this.unclassifiedAccordionBtn.setAttribute("aria-expanded", String(willExpand));
         this.unclassifiedAccordionBody.style.display = willExpand ? "block" : "none";
         this.unclassifiedAccordionBody.setAttribute("aria-hidden", String(!willExpand));
+      });
+    }
+
+    // 최상단 이동 플로팅 버튼
+    if (this.scrollTopBtn) {
+      const updateScrollTopVisibility = () => {
+        const isScrolled = (window.scrollY || window.pageYOffset || 0) >= 300;
+        this.scrollTopBtn.classList.toggle("visible", isScrolled);
+      };
+
+      window.addEventListener("scroll", updateScrollTopVisibility, { passive: true });
+      updateScrollTopVisibility();
+
+      this.scrollTopBtn.addEventListener("click", () => {
+        const prefersReducedMotion =
+          typeof window.matchMedia === "function" &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        window.scrollTo({
+          top: 0,
+          behavior: prefersReducedMotion ? "auto" : "smooth"
+        });
       });
     }
   }
