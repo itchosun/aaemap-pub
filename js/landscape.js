@@ -186,7 +186,7 @@ export async function loadLandscapeData() {
           ...prod,
           org: org,
           entry_type: "product",
-          source_type: "survey",
+          source_type: prod.source_type || "survey",
           entry_id: `product:${prod.product_id}`,
           company_summary: org.company_profile?.summary || null
         };

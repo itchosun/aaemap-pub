@@ -1,20 +1,21 @@
 {
   "meta": {
     "schema_version": "1.4",
-    "generated_at": "2026-10-20T19:24:17+09:00",
-    "total_organizations": 296,
-    "total_products": 136,
-    "classified_organizations": 292,
-    "unclassified_organizations": 4,
-    "source_database_schema": "v9+organization_profiles/1.2",
-    "source_database_sha256": "d1c29021488b3fdb293303cbffd0f0b66d0a12b320c38a7a7fe26963e2994b04",
-    "total_source_organizations": 297,
+    "generated_at": "2026-11-27T01:54:39+09:00",
+    "total_organizations": 328,
+    "total_products": 137,
+    "classified_organizations": 323,
+    "unclassified_organizations": 5,
+    "source_database_schema": "v9+organization_profiles/1.3",
+    "source_database_sha256": "f8e4b7caf9ac430b88a2d3027edf6d207a875e0a3130ef38c23214b8adde0908",
+    "total_source_organizations": 329,
     "relationship_only_organizations": 1,
-    "total_company_introductions": 292,
+    "total_company_introductions": 324,
     "missing_company_introductions": 4,
     "total_editorial_profiles": 170,
-    "total_display_entries": 306,
-    "unclassified_business_organizations": 0,
+    "total_nia_registration_profiles": 31,
+    "total_display_entries": 338,
+    "unclassified_business_organizations": 1,
     "integrated_survey_organizations": 2,
     "integrated_survey_responses": 2,
     "survey1_organizations": 125,
@@ -360,7 +361,9 @@
       "org_id": "ORG00125",
       "display_name": "KSTEC",
       "official_name": "KSTEC",
-      "aliases": [],
+      "aliases": [
+        "지식시스템 ㈜ KSTEC"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.kstec.co.kr",
@@ -568,6 +571,118 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00302",
+      "display_name": "LG유플러스",
+      "official_name": "LG유플러스",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.lguplus.com",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00302",
+        "summary": "AI 통화 에이전트 ‘ixi-O’와 AI 모델 ‘ixi-GEN’을 개발하며, AI 컨택센터와 AI 데이터센터 분야도 다룬다.",
+        "registration_summary": "AI 통화 에이전트 ‘ixi-O’와 AI 모델 ‘ixi-GEN’을 개발하며, AI 컨택센터와 AI 데이터센터 분야도 다룬다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "foundation_infrastructure",
+          "domain_specific_agent_service"
+        ],
+        "business_domains": [
+          "customer_service_aicc_crm",
+          "developer_tools_it_infrastructure"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00302-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00302-S01"
+        ],
+        "registration_source_id": "EPR-ORG00302-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "foundation_infrastructure",
+            "source_ids": [
+              "EPR-ORG00302-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "technology_domains",
+            "code": "domain_specific_agent_service",
+            "source_ids": [
+              "EPR-ORG00302-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "customer_service_aicc_crm",
+            "source_ids": [
+              "EPR-ORG00302-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "developer_tools_it_infrastructure",
+            "source_ids": [
+              "EPR-ORG00302-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "AI 통화 에이전트 ‘ixi-O’와 AI 모델 ‘ixi-GEN’을 개발하며, AI 컨택센터와 AI 데이터센터 분야도 다룬다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000892",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "AI 통화 에이전트 ‘ixi-O’와 AI 모델 ‘ixi-GEN’을 개발하며, AI 컨택센터와 AI 데이터센터 분야도 다룬다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "foundation_infrastructure",
+        "domain_specific_agent_service"
+      ],
+      "business_domains": [
+        "customer_service_aicc_crm",
+        "developer_tools_it_infrastructure"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00255",
       "display_name": "MBN",
       "official_name": "MBN",
@@ -641,85 +756,8 @@
       "parent_organization": null
     },
     {
-      "org_id": "ORG00290",
-      "display_name": "Mind AI",
-      "official_name": "Mind AI",
-      "aliases": [],
-      "org_type": "사업자",
-      "alliance_member_status": "회원사",
-      "website": "https://www.wisdomgraph.ai",
-      "has_products": true,
-      "classification_status": "classified",
-      "products": [
-        {
-          "product_id": "PRD000099",
-          "name": "MEGA Loop, MEGA Optimus",
-          "description": "MEGA Loop:\nAI 에이전트를 배포 전 QA부터 배포 후 운영까지 지속적으로 검증하고 개선하는 솔루션입니다. 실패 트레이스를 분석해 버그의 원인을 찾고 수정한 뒤, 정상 작동 여부가 검증된 수정안만 Draft PR 형태로 제안합니다. 또한 성공 트레이스를 기반으로 에이전트의 성능 평가와 개선에 활용할 수 있는 골든 데이터셋을 자동으로 구축합니다.\n\nMEGA Optimus:\nAI 에이전트의 프롬프트·도구·오케스트레이션·코드·데이터 등 5개 영역을 주기적으로 분석하고 최적화하는 솔루션입니다. 이를 통해 에이전트의 성능을 높이거나 토큰 사용량과 운영 비용을 줄입니다.\n\n타깃 고객:\n타깃 고객은 AI 에이전트를 개발·테스트·운영하는 기술 기업과 대기업·금융기관·공공기관입니다. 주요 사용자는 AI·LLM 엔지니어, 에이전트 개발팀, QA·평가팀, LLMOps·AI 플랫폼 팀입니다.",
-          "core_technology": "AI 에이전트의 운영 트레이스를 골든 데이터셋으로 전환하고, 문제 진단·자동 수정부터 워크플로 최적화까지 수행하는 EDD 기반 자율 진화 인프라를 제공합니다. 이 과정에서 검증된 Skill·Strategy·Trajectory는 WisdomGraph DB에 축적되어 AI 에이전트의 성능을 지속적으로 높이는 지식 자산이 됩니다.",
-          "target_market": "한국을 중심으로 미국과 동남아시아 등 국내외에서 AI 에이전트를 개발·테스트·운영하는 기업을 대상으로 합니다. 주요 고객층은 AI·LLM 엔지니어, 에이전트 개발팀, QA·평가팀, LLMOps·AI 플랫폼 팀이 있는 기술 기업과 대기업·금융기관·공공기관입니다.",
-          "competitors": "LangSmith Engine, GEPA",
-          "core_competitiveness": "기술적 우위 (성능, 정확도, 독자 기술 등), 기능 및 사용 편의성 (차별화된 기능, UI/UX 등)",
-          "differentiation": "MEGA Loop는 할루시네이션을 포함한 에이전트 오류를 탐지하고, 재현·검증 게이트를 통과한 수정안만 제안합니다. 또한 성공 트레이스를 골든 데이터셋으로 전환해 평가와 개선에 활용합니다. MEGA Optimus는 프롬프트뿐 아니라 도구·코드·오케스트레이션·데이터까지 에이전트 시스템 전체를 최적화합니다.",
-          "use_cases": "정보 검색, 외부 도구 호출, 다단계 추론과 업무 수행이 필요한 다양한 AI 에이전트에 활용됩니다. 실행 과정의 할루시네이션·검색 오류·툴 호출 실패를 진단·수정하고, 성공 트레이스를 골든 데이터셋으로 전환해 프롬프트·도구·코드·오케스트레이션·데이터를 최적화합니다. 현재 국내외 AI 개발, QA, 운영팀을 대상으로 클로즈드 베타를 운영하고 있습니다.",
-          "technology_domains": [
-            "agent_builder_framework",
-            "ai_trust_security"
-          ],
-          "business_domains": [
-            "developer_tools_it_infrastructure",
-            "general_enterprise"
-          ],
-          "business_domain_customs": [],
-          "operating_models": [
-            "not_applicable"
-          ],
-          "source_type": "survey"
-        }
-      ],
-      "has_survey1": true,
-      "has_survey2": true,
-      "has_integrated_survey": false,
-      "ecosystem_role": "business_provider",
-      "editorial_profile": null,
-      "company_profile": {
-        "summary": "AI 리포와 AI 에이전트를 주요 기술·서비스로 등록했다.",
-        "source_type": "association_registration_seed",
-        "source_label": "회원사 등록자료",
-        "status": "available",
-        "company_confirmed": false,
-        "sources": [
-          {
-            "source_id": "OTX000291",
-            "source_type": "association_registration_seed",
-            "label": "회원사 등록자료",
-            "url": null,
-            "checked_at": "2026-10-17"
-          }
-        ],
-        "checked_at": "2026-10-17"
-      },
-      "summary": "AI 리포와 AI 에이전트를 주요 기술·서비스로 등록했다.",
-      "summary_source": "association_registration_seed",
-      "technology_domains": [
-        "agent_builder_framework",
-        "ai_trust_security"
-      ],
-      "business_domains": [
-        "developer_tools_it_infrastructure",
-        "general_enterprise"
-      ],
-      "operating_models": [
-        "not_applicable"
-      ],
-      "classification_source": "survey",
-      "classification_completeness": "complete",
-      "classification_applicability": "product_or_service",
-      "parent_org_id": null,
-      "parent_organization": null
-    },
-    {
       "org_id": "ORG00085",
-      "display_name": "NC AI( 엔씨에이아이)",
+      "display_name": "NC AI",
       "official_name": "NC AI( 엔씨에이아이)",
       "aliases": [
         "NC AI(주식회사 엔씨에이아이)"
@@ -793,6 +831,108 @@
         "assistant_process_automation"
       ],
       "classification_source": "survey",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00306",
+      "display_name": "NHN클라우드",
+      "official_name": "NHN 클라우드",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.nhncloud.com",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00306",
+        "summary": "AI 데이터센터와 GPU·머신러닝 플랫폼, AI 에이전트 개발·운영 플랫폼 등 AI 인프라와 개발 환경을 제공한다.",
+        "registration_summary": "AI 데이터센터와 GPU·머신러닝 플랫폼, AI 에이전트 개발·운영 플랫폼 등 AI 인프라와 개발 환경을 제공한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "foundation_infrastructure",
+          "agent_builder_framework"
+        ],
+        "business_domains": [
+          "developer_tools_it_infrastructure"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00306-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00306-S01"
+        ],
+        "registration_source_id": "EPR-ORG00306-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "foundation_infrastructure",
+            "source_ids": [
+              "EPR-ORG00306-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "technology_domains",
+            "code": "agent_builder_framework",
+            "source_ids": [
+              "EPR-ORG00306-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "developer_tools_it_infrastructure",
+            "source_ids": [
+              "EPR-ORG00306-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "AI 데이터센터와 GPU·머신러닝 플랫폼, AI 에이전트 개발·운영 플랫폼 등 AI 인프라와 개발 환경을 제공한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000900",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "AI 데이터센터와 GPU·머신러닝 플랫폼, AI 에이전트 개발·운영 플랫폼 등 AI 인프라와 개발 환경을 제공한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "foundation_infrastructure",
+        "agent_builder_framework"
+      ],
+      "business_domains": [
+        "developer_tools_it_infrastructure"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
       "classification_completeness": "complete",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
@@ -893,6 +1033,98 @@
       ],
       "operating_models": [],
       "classification_source": "editorial_research",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00327",
+      "display_name": "POSCO",
+      "official_name": "POSCO",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.posco.co.kr",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00327",
+        "summary": "제조 현장에 AI를 적용해 공장 운영을 지능화하고, 공정 자율제어와 업무별 AI 에이전트를 개발한다.",
+        "registration_summary": "제조 현장에 AI를 적용해 공장 운영을 지능화하고, 공정 자율제어와 업무별 AI 에이전트를 개발한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "domain_specific_agent_service"
+        ],
+        "business_domains": [
+          "manufacturing_smart_factory"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00327-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00327-S01"
+        ],
+        "registration_source_id": "EPR-ORG00327-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "domain_specific_agent_service",
+            "source_ids": [
+              "EPR-ORG00327-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "manufacturing_smart_factory",
+            "source_ids": [
+              "EPR-ORG00327-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "제조 현장에 AI를 적용해 공장 운영을 지능화하고, 공정 자율제어와 업무별 AI 에이전트를 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000942",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "제조 현장에 AI를 적용해 공장 운영을 지능화하고, 공정 자율제어와 업무별 AI 에이전트를 개발한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "domain_specific_agent_service"
+      ],
+      "business_domains": [
+        "manufacturing_smart_factory"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
       "classification_completeness": "complete",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
@@ -1083,7 +1315,9 @@
       "org_id": "ORG00284",
       "display_name": "YATAV",
       "official_name": "YATAV",
-      "aliases": [],
+      "aliases": [
+        "㈜야타브"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.yatavent.com/",
@@ -1276,7 +1510,9 @@
       "org_id": "ORG00235",
       "display_name": "갈렙앤컴퍼니",
       "official_name": "갈렙앤컴퍼니",
-      "aliases": [],
+      "aliases": [
+        "(주)갈렙앤컴퍼니"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.calebglobal.com",
@@ -1719,6 +1955,202 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00326",
+      "display_name": "국민대학교",
+      "official_name": "국민대학교",
+      "aliases": [],
+      "org_type": "기관",
+      "alliance_member_status": "회원사",
+      "website": "https://www.kookmin.ac.kr",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "academic",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00326",
+        "summary": "AI와 빅데이터 응용을 연구하고, 여러 전공에 AI를 접목하는 융합 교육과 자율주행 AI 연구를 다룬다.",
+        "registration_summary": "AI와 빅데이터 응용을 연구하고, 여러 전공에 AI를 접목하는 융합 교육과 자율주행 AI 연구를 다룬다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "ai_trust_security"
+        ],
+        "business_domains": [
+          "developer_tools_it_infrastructure",
+          "other_industry_service"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00326-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00326-S02",
+            "source_type": "official",
+            "label": "공식 자료",
+            "url": "https://aisw.cs.kookmin.ac.kr/",
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00326-USR",
+            "source_type": "user_classification",
+            "label": "분류 검토 확정",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00326-S01"
+        ],
+        "registration_source_id": "EPR-ORG00326-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "ai_trust_security",
+            "source_ids": [
+              "EPR-ORG00326-S02"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          },
+          {
+            "field": "business_domains",
+            "code": "developer_tools_it_infrastructure",
+            "source_ids": [
+              "EPR-ORG00326-USR"
+            ],
+            "assignment_basis": "분류 검토 확정"
+          },
+          {
+            "field": "business_domains",
+            "code": "other_industry_service",
+            "source_ids": [
+              "EPR-ORG00326-USR"
+            ],
+            "assignment_basis": "분류 검토 확정"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "AI와 빅데이터 응용을 연구하고, 여러 전공에 AI를 접목하는 융합 교육과 자율주행 AI 연구를 다룬다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000940",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "AI와 빅데이터 응용을 연구하고, 여러 전공에 AI를 접목하는 융합 교육과 자율주행 AI 연구를 다룬다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "ai_trust_security"
+      ],
+      "business_domains": [
+        "developer_tools_it_infrastructure",
+        "other_industry_service"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00329",
+      "display_name": "국방과학연구소",
+      "official_name": "국방과학연구소",
+      "aliases": [],
+      "org_type": "기관",
+      "alliance_member_status": "회원사",
+      "website": "https://www.add.re.kr",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "research_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00329",
+        "summary": "국방 분야의 AI와 무인체계 관련 기술을 연구한다.",
+        "registration_summary": "국방 분야의 AI와 무인체계 관련 기술을 연구한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [],
+        "business_domains": [
+          "public_safety_defense"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00329-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00329-S01"
+        ],
+        "registration_source_id": "EPR-ORG00329-S01",
+        "classification_provenance": [
+          {
+            "field": "business_domains",
+            "code": "public_safety_defense",
+            "source_ids": [
+              "EPR-ORG00329-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "국방 분야의 AI와 무인체계 관련 기술을 연구한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000946",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "국방 분야의 AI와 무인체계 관련 기술을 연구한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [],
+      "business_domains": [
+        "public_safety_defense"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "partial",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00021",
       "display_name": "국제드론표준산업협회",
       "official_name": "국제드론표준산업협회",
@@ -1935,7 +2367,9 @@
       "org_id": "ORG00257",
       "display_name": "금융결제원",
       "official_name": "금융결제원",
-      "aliases": [],
+      "aliases": [
+        "(사)금융결제원"
+      ],
       "org_type": "기관",
       "alliance_member_status": "회원사",
       "website": "https://kftc.or.kr",
@@ -2036,6 +2470,105 @@
       ],
       "operating_models": [],
       "classification_source": "editorial_research",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00303",
+      "display_name": "금융보안원",
+      "official_name": "금융보안원",
+      "aliases": [],
+      "org_type": "기관",
+      "alliance_member_status": "회원사",
+      "website": "https://www.fsec.or.kr",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "industry_support",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00303",
+        "summary": "AI 알고리즘의 보안성을 검증하고, 레드티밍을 통해 AI 시스템의 잠재적 취약점을 평가한다.",
+        "registration_summary": "AI 알고리즘의 보안성을 검증하고, 레드티밍을 통해 AI 시스템의 잠재적 취약점을 평가한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "ai_trust_security"
+        ],
+        "business_domains": [
+          "finance_insurance_fintech"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00303-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00303-S02",
+            "source_type": "official",
+            "label": "공식 자료",
+            "url": "https://www.fsec.or.kr/bbs/detail?bbsNo=12122&menuNo=69",
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00303-S01"
+        ],
+        "registration_source_id": "EPR-ORG00303-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "ai_trust_security",
+            "source_ids": [
+              "EPR-ORG00303-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "finance_insurance_fintech",
+            "source_ids": [
+              "EPR-ORG00303-S02"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "AI 알고리즘의 보안성을 검증하고, 레드티밍을 통해 AI 시스템의 잠재적 취약점을 평가한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000894",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "AI 알고리즘의 보안성을 검증하고, 레드티밍을 통해 AI 시스템의 잠재적 취약점을 평가한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "ai_trust_security"
+      ],
+      "business_domains": [
+        "finance_insurance_fintech"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
       "classification_completeness": "complete",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
@@ -2742,10 +3275,114 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00322",
+      "display_name": "대한의료데이터협회",
+      "official_name": "대한의료데이터협회",
+      "aliases": [],
+      "org_type": "기관",
+      "alliance_member_status": "회원사",
+      "website": "http://kmda.re.kr/",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "industry_support",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00322",
+        "summary": "의료 데이터의 정제와 표준화, 개인정보 보호, AI 기반 의사결정 지원을 등록자료의 주요 활동 분야로 제시했다.",
+        "registration_summary": "의료 데이터의 정제와 표준화, 개인정보 보호, AI 기반 의사결정 지원을 등록자료의 주요 활동 분야로 제시했다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "domain_specific_agent_service",
+          "ai_trust_security"
+        ],
+        "business_domains": [
+          "healthcare_bio_medical"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00322-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00322-S01"
+        ],
+        "registration_source_id": "EPR-ORG00322-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "domain_specific_agent_service",
+            "source_ids": [
+              "EPR-ORG00322-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "technology_domains",
+            "code": "ai_trust_security",
+            "source_ids": [
+              "EPR-ORG00322-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "healthcare_bio_medical",
+            "source_ids": [
+              "EPR-ORG00322-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "의료 데이터의 정제와 표준화, 개인정보 보호, AI 기반 의사결정 지원을 등록자료의 주요 활동 분야로 제시했다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000932",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "의료 데이터의 정제와 표준화, 개인정보 보호, AI 기반 의사결정 지원을 등록자료의 주요 활동 분야로 제시했다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "domain_specific_agent_service",
+        "ai_trust_security"
+      ],
+      "business_domains": [
+        "healthcare_bio_medical"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00104",
       "display_name": "더존비즈온",
       "official_name": "더존비즈온",
-      "aliases": [],
+      "aliases": [
+        "(주)더존비즈온"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.douzone.com",
@@ -3192,6 +3829,105 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00305",
+      "display_name": "데이터랩스",
+      "official_name": "데이터랩스",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://data-labs.co.kr",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00305",
+        "summary": "생성형 AI와 에이전트를 개발하고, 물리 지식을 반영한 신경망을 활용해 견적 산정을 자동화하는 솔루션을 개발한다.",
+        "registration_summary": "생성형 AI와 에이전트를 개발하고, 물리 지식을 반영한 신경망을 활용해 견적 산정을 자동화하는 솔루션을 개발한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "domain_specific_agent_service"
+        ],
+        "business_domains": [
+          "other_industry_service"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00305-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00305-USR",
+            "source_type": "user_classification",
+            "label": "분류 검토 확정",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00305-S01"
+        ],
+        "registration_source_id": "EPR-ORG00305-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "domain_specific_agent_service",
+            "source_ids": [
+              "EPR-ORG00305-USR"
+            ],
+            "assignment_basis": "분류 검토 확정"
+          },
+          {
+            "field": "business_domains",
+            "code": "other_industry_service",
+            "source_ids": [
+              "EPR-ORG00305-USR"
+            ],
+            "assignment_basis": "분류 검토 확정"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "생성형 AI와 에이전트를 개발하고, 물리 지식을 반영한 신경망을 활용해 견적 산정을 자동화하는 솔루션을 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000898",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "생성형 AI와 에이전트를 개발하고, 물리 지식을 반영한 신경망을 활용해 견적 산정을 자동화하는 솔루션을 개발한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "domain_specific_agent_service"
+      ],
+      "business_domains": [
+        "other_industry_service"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00116",
       "display_name": "데이터메이커",
       "official_name": "데이터메이커",
@@ -3355,7 +4091,10 @@
       "org_id": "ORG00267",
       "display_name": "동의대학교 산학협력단(부산IT융합부품연구소)",
       "official_name": "동의대학교 산학협력단(부산IT융합부품연구소)",
-      "aliases": [],
+      "aliases": [
+        "동의대학교",
+        "동의대학교 산학협력단"
+      ],
       "org_type": "내부조직",
       "alliance_member_status": "회원사",
       "website": "https://www.cidi.re.kr",
@@ -3387,6 +4126,7 @@
           "source_type": "survey"
         }
       ],
+      "compact_display_name": "동의대학교",
       "has_survey1": true,
       "has_survey2": false,
       "has_integrated_survey": false,
@@ -3430,7 +4170,9 @@
       "org_id": "ORG00083",
       "display_name": "드림시큐리티",
       "official_name": "드림시큐리티",
-      "aliases": [],
+      "aliases": [
+        "(주)드림시큐리티"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.dreamsecurity.com",
@@ -3918,16 +4660,24 @@
       "ecosystem_role": "business_provider",
       "editorial_profile": null,
       "company_profile": {
-        "summary": null,
-        "source_type": null,
-        "source_label": null,
-        "status": "missing",
+        "summary": "사출성형 공정의 자율 운영을 지원하는 AI 에이전트 솔루션을 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
         "company_confirmed": false,
-        "sources": [],
-        "checked_at": "2026-10-17"
+        "sources": [
+          {
+            "source_id": "OTX000880",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
       },
-      "summary": null,
-      "summary_source": null,
+      "summary": "사출성형 공정의 자율 운영을 지원하는 AI 에이전트 솔루션을 개발한다.",
+      "summary_source": "nia_registration",
       "technology_domains": [
         "foundation_infrastructure",
         "agent_builder_framework",
@@ -4615,7 +5365,9 @@
       "org_id": "ORG00247",
       "display_name": "라이너",
       "official_name": "라이너",
-      "aliases": [],
+      "aliases": [
+        "주식회사 라이너"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://liner.com/ko",
@@ -5423,6 +6175,105 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00308",
+      "display_name": "렛서",
+      "official_name": "렛서",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.letsur.ai",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00308",
+        "summary": "AI API 관리와 AI 콘텐츠 생성 기술을 다루며, AI 교육과 컨설팅을 제공한다.",
+        "registration_summary": "AI API 관리와 AI 콘텐츠 생성 기술을 다루며, AI 교육과 컨설팅을 제공한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "agent_builder_framework"
+        ],
+        "business_domains": [
+          "developer_tools_it_infrastructure"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00308-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00308-S02",
+            "source_type": "official",
+            "label": "공식 자료",
+            "url": "https://letsur.ai/",
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00308-S01"
+        ],
+        "registration_source_id": "EPR-ORG00308-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "agent_builder_framework",
+            "source_ids": [
+              "EPR-ORG00308-S02"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          },
+          {
+            "field": "business_domains",
+            "code": "developer_tools_it_infrastructure",
+            "source_ids": [
+              "EPR-ORG00308-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "AI API 관리와 AI 콘텐츠 생성 기술을 다루며, AI 교육과 컨설팅을 제공한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000904",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "AI API 관리와 AI 콘텐츠 생성 기술을 다루며, AI 교육과 컨설팅을 제공한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "agent_builder_framework"
+      ],
+      "business_domains": [
+        "developer_tools_it_infrastructure"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00067",
       "display_name": "로이드케이",
       "official_name": "로이드케이",
@@ -5505,9 +6356,11 @@
     },
     {
       "org_id": "ORG00084",
-      "display_name": "롯데 이노베이트",
+      "display_name": "롯데이노베이트",
       "official_name": "롯데 이노베이트",
-      "aliases": [],
+      "aliases": [
+        "롯데 이노베이트㈜"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.lotteinnovate.com/",
@@ -5793,7 +6646,7 @@
     },
     {
       "org_id": "ORG00294",
-      "display_name": "뤼튼테크놀로지스 AX",
+      "display_name": "뤼튼테크놀로지스AX",
       "official_name": "뤼튼테크놀로지스 AX",
       "aliases": [
         "Wrtn Technologies AX CIC",
@@ -6057,6 +6910,188 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00290",
+      "display_name": "마인드에이아이",
+      "official_name": "마인드에이아이",
+      "aliases": [
+        "Mind AI",
+        "주식회사 마인드에이아이"
+      ],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.wisdomgraph.ai",
+      "has_products": true,
+      "classification_status": "classified",
+      "products": [
+        {
+          "product_id": "PRD000099",
+          "name": "MEGA Loop, MEGA Optimus",
+          "description": "MEGA Loop:\nAI 에이전트를 배포 전 QA부터 배포 후 운영까지 지속적으로 검증하고 개선하는 솔루션입니다. 실패 트레이스를 분석해 버그의 원인을 찾고 수정한 뒤, 정상 작동 여부가 검증된 수정안만 Draft PR 형태로 제안합니다. 또한 성공 트레이스를 기반으로 에이전트의 성능 평가와 개선에 활용할 수 있는 골든 데이터셋을 자동으로 구축합니다.\n\nMEGA Optimus:\nAI 에이전트의 프롬프트·도구·오케스트레이션·코드·데이터 등 5개 영역을 주기적으로 분석하고 최적화하는 솔루션입니다. 이를 통해 에이전트의 성능을 높이거나 토큰 사용량과 운영 비용을 줄입니다.\n\n타깃 고객:\n타깃 고객은 AI 에이전트를 개발·테스트·운영하는 기술 기업과 대기업·금융기관·공공기관입니다. 주요 사용자는 AI·LLM 엔지니어, 에이전트 개발팀, QA·평가팀, LLMOps·AI 플랫폼 팀입니다.",
+          "core_technology": "AI 에이전트의 운영 트레이스를 골든 데이터셋으로 전환하고, 문제 진단·자동 수정부터 워크플로 최적화까지 수행하는 EDD 기반 자율 진화 인프라를 제공합니다. 이 과정에서 검증된 Skill·Strategy·Trajectory는 WisdomGraph DB에 축적되어 AI 에이전트의 성능을 지속적으로 높이는 지식 자산이 됩니다.",
+          "target_market": "한국을 중심으로 미국과 동남아시아 등 국내외에서 AI 에이전트를 개발·테스트·운영하는 기업을 대상으로 합니다. 주요 고객층은 AI·LLM 엔지니어, 에이전트 개발팀, QA·평가팀, LLMOps·AI 플랫폼 팀이 있는 기술 기업과 대기업·금융기관·공공기관입니다.",
+          "competitors": "LangSmith Engine, GEPA",
+          "core_competitiveness": "기술적 우위 (성능, 정확도, 독자 기술 등), 기능 및 사용 편의성 (차별화된 기능, UI/UX 등)",
+          "differentiation": "MEGA Loop는 할루시네이션을 포함한 에이전트 오류를 탐지하고, 재현·검증 게이트를 통과한 수정안만 제안합니다. 또한 성공 트레이스를 골든 데이터셋으로 전환해 평가와 개선에 활용합니다. MEGA Optimus는 프롬프트뿐 아니라 도구·코드·오케스트레이션·데이터까지 에이전트 시스템 전체를 최적화합니다.",
+          "use_cases": "정보 검색, 외부 도구 호출, 다단계 추론과 업무 수행이 필요한 다양한 AI 에이전트에 활용됩니다. 실행 과정의 할루시네이션·검색 오류·툴 호출 실패를 진단·수정하고, 성공 트레이스를 골든 데이터셋으로 전환해 프롬프트·도구·코드·오케스트레이션·데이터를 최적화합니다. 현재 국내외 AI 개발, QA, 운영팀을 대상으로 클로즈드 베타를 운영하고 있습니다.",
+          "technology_domains": [
+            "agent_builder_framework",
+            "ai_trust_security"
+          ],
+          "business_domains": [
+            "developer_tools_it_infrastructure",
+            "general_enterprise"
+          ],
+          "business_domain_customs": [],
+          "operating_models": [
+            "not_applicable"
+          ],
+          "source_type": "survey"
+        }
+      ],
+      "has_survey1": true,
+      "has_survey2": true,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": null,
+      "company_profile": {
+        "summary": "AI 리포와 AI 에이전트를 주요 기술·서비스로 등록했다.",
+        "source_type": "association_registration_seed",
+        "source_label": "회원사 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000291",
+            "source_type": "association_registration_seed",
+            "label": "회원사 등록자료",
+            "url": null,
+            "checked_at": "2026-10-17"
+          }
+        ],
+        "checked_at": "2026-10-17"
+      },
+      "summary": "AI 리포와 AI 에이전트를 주요 기술·서비스로 등록했다.",
+      "summary_source": "association_registration_seed",
+      "technology_domains": [
+        "agent_builder_framework",
+        "ai_trust_security"
+      ],
+      "business_domains": [
+        "developer_tools_it_infrastructure",
+        "general_enterprise"
+      ],
+      "operating_models": [
+        "not_applicable"
+      ],
+      "classification_source": "survey",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00314",
+      "display_name": "마켓파일럿",
+      "official_name": "주식회사 마켓파일럿",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.marketpilot.it",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00314",
+        "summary": "소상공인용 AI 마케팅 에이전트 ‘파이’와 매장 진단 보고서를 제공하며, 에이전트가 주문·결제 기능을 호출할 수 있는 MCP 서버도 소개했다.",
+        "registration_summary": "소상공인용 AI 마케팅 에이전트 ‘파이’와 매장 진단 보고서를 제공하며, 에이전트가 주문·결제 기능을 호출할 수 있는 MCP 서버도 소개했다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "domain_specific_agent_service"
+        ],
+        "business_domains": [
+          "marketing_advertising_sales",
+          "commerce_retail"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00314-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00314-S01"
+        ],
+        "registration_source_id": "EPR-ORG00314-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "domain_specific_agent_service",
+            "source_ids": [
+              "EPR-ORG00314-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "marketing_advertising_sales",
+            "source_ids": [
+              "EPR-ORG00314-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "commerce_retail",
+            "source_ids": [
+              "EPR-ORG00314-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "소상공인용 AI 마케팅 에이전트 ‘파이’와 매장 진단 보고서를 제공하며, 에이전트가 주문·결제 기능을 호출할 수 있는 MCP 서버도 소개했다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000916",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "소상공인용 AI 마케팅 에이전트 ‘파이’와 매장 진단 보고서를 제공하며, 에이전트가 주문·결제 기능을 호출할 수 있는 MCP 서버도 소개했다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "domain_specific_agent_service"
+      ],
+      "business_domains": [
+        "marketing_advertising_sales",
+        "commerce_retail"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00103",
       "display_name": "마크노바",
       "official_name": "마크노바",
@@ -6137,7 +7172,9 @@
       "org_id": "ORG00202",
       "display_name": "마크애니",
       "official_name": "마크애니",
-      "aliases": [],
+      "aliases": [
+        "주식회사 마크애니"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://markany.com",
@@ -6223,7 +7260,9 @@
       "org_id": "ORG00094",
       "display_name": "마키나락스",
       "official_name": "마키나락스",
-      "aliases": [],
+      "aliases": [
+        "주식회사 마키나락스"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.makinarocks.ai",
@@ -7065,13 +8104,16 @@
       "org_id": "ORG00283",
       "display_name": "명지대학교 인공지능·소프트웨어융합대학 디지털콘텐츠디자인학과",
       "official_name": "명지대학교 인공지능·소프트웨어융합대학 디지털콘텐츠디자인학과",
-      "aliases": [],
+      "aliases": [
+        "명지대학교"
+      ],
       "org_type": "내부조직",
       "alliance_member_status": "회원사",
       "website": "https://www.mju.ac.kr",
       "has_products": false,
       "classification_status": "classified",
       "products": [],
+      "compact_display_name": "명지대학교",
       "has_survey1": false,
       "has_survey2": false,
       "has_integrated_survey": false,
@@ -7432,7 +8474,9 @@
       "org_id": "ORG00141",
       "display_name": "몬드리안에이아이",
       "official_name": "몬드리안에이아이",
-      "aliases": [],
+      "aliases": [
+        "몬드리안에이아이 주식회사"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://mondrian.ai/",
@@ -8095,7 +9139,9 @@
       "org_id": "ORG00101",
       "display_name": "뷰텔",
       "official_name": "뷰텔",
-      "aliases": [],
+      "aliases": [
+        "주식회사 뷰텔"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.view-tel.co.kr",
@@ -8296,6 +9342,105 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00325",
+      "display_name": "비바리퍼블리카",
+      "official_name": "비바리퍼블리카",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://toss.im/",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00325",
+        "summary": "금융·증권 서비스와 사내 업무에 활용하는 AI 솔루션을 주요 분야로 제시했다.",
+        "registration_summary": "금융·증권 서비스와 사내 업무에 활용하는 AI 솔루션을 주요 분야로 제시했다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "agent_builder_framework"
+        ],
+        "business_domains": [
+          "finance_insurance_fintech"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00325-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00325-S02",
+            "source_type": "official",
+            "label": "공식 자료",
+            "url": "https://toss.tech/article/54837",
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00325-S01"
+        ],
+        "registration_source_id": "EPR-ORG00325-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "agent_builder_framework",
+            "source_ids": [
+              "EPR-ORG00325-S02"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          },
+          {
+            "field": "business_domains",
+            "code": "finance_insurance_fintech",
+            "source_ids": [
+              "EPR-ORG00325-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "금융·증권 서비스와 사내 업무에 활용하는 AI 솔루션을 주요 분야로 제시했다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000938",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "금융·증권 서비스와 사내 업무에 활용하는 AI 솔루션을 주요 분야로 제시했다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "agent_builder_framework"
+      ],
+      "business_domains": [
+        "finance_insurance_fintech"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00203",
       "display_name": "비바이노베이션",
       "official_name": "비바이노베이션",
@@ -8403,6 +9548,98 @@
       ],
       "operating_models": [],
       "classification_source": "editorial_research",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00319",
+      "display_name": "비아이랩",
+      "official_name": "주식회사 비아이랩",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.bilab.co.kr/",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00319",
+        "summary": "데이터 가상화 플랫폼 ‘Octagon FLUX’를 개발한다. 여러 시스템에 흩어진 업무 데이터를 연결해 AI와 분석 서비스에 활용할 수 있도록 한다.",
+        "registration_summary": "데이터 가상화 플랫폼 ‘Octagon FLUX’를 개발한다. 여러 시스템에 흩어진 업무 데이터를 연결해 AI와 분석 서비스에 활용할 수 있도록 한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "foundation_infrastructure"
+        ],
+        "business_domains": [
+          "developer_tools_it_infrastructure"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00319-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00319-S01"
+        ],
+        "registration_source_id": "EPR-ORG00319-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "foundation_infrastructure",
+            "source_ids": [
+              "EPR-ORG00319-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "developer_tools_it_infrastructure",
+            "source_ids": [
+              "EPR-ORG00319-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "데이터 가상화 플랫폼 ‘Octagon FLUX’를 개발한다. 여러 시스템에 흩어진 업무 데이터를 연결해 AI와 분석 서비스에 활용할 수 있도록 한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000926",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "데이터 가상화 플랫폼 ‘Octagon FLUX’를 개발한다. 여러 시스템에 흩어진 업무 데이터를 연결해 AI와 분석 서비스에 활용할 수 있도록 한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "foundation_infrastructure"
+      ],
+      "business_domains": [
+        "developer_tools_it_infrastructure"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
       "classification_completeness": "complete",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
@@ -9013,6 +10250,105 @@
       ],
       "operating_models": [],
       "classification_source": "editorial_research",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00309",
+      "display_name": "빅브레이너",
+      "official_name": "빅브레이너",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.bigbrainer.net",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00309",
+        "summary": "AI 서비스의 사용자 경험을 설계하고 창업 교육 서비스를 제공한다.",
+        "registration_summary": "AI 서비스의 사용자 경험을 설계하고 창업 교육 서비스를 제공한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "foundation_infrastructure"
+        ],
+        "business_domains": [
+          "other_industry_service"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00309-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00309-USR",
+            "source_type": "user_classification",
+            "label": "분류 검토 확정",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00309-S01"
+        ],
+        "registration_source_id": "EPR-ORG00309-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "foundation_infrastructure",
+            "source_ids": [
+              "EPR-ORG00309-USR"
+            ],
+            "assignment_basis": "분류 검토 확정"
+          },
+          {
+            "field": "business_domains",
+            "code": "other_industry_service",
+            "source_ids": [
+              "EPR-ORG00309-USR"
+            ],
+            "assignment_basis": "분류 검토 확정"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "AI 서비스의 사용자 경험을 설계하고 창업 교육 서비스를 제공한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000906",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "AI 서비스의 사용자 경험을 설계하고 창업 교육 서비스를 제공한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "foundation_infrastructure"
+      ],
+      "business_domains": [
+        "other_industry_service"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
       "classification_completeness": "complete",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
@@ -9684,7 +11020,9 @@
       "org_id": "ORG00177",
       "display_name": "새움소프트",
       "official_name": "새움소프트",
-      "aliases": [],
+      "aliases": [
+        "주식회사 새움소프트"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://saeumsoft.com",
@@ -9759,13 +11097,16 @@
       "org_id": "ORG00282",
       "display_name": "서울대학교 데이터사이언스대학원",
       "official_name": "서울대학교 데이터사이언스대학원",
-      "aliases": [],
+      "aliases": [
+        "서울대학교"
+      ],
       "org_type": "내부조직",
       "alliance_member_status": "회원사",
       "website": "https://gsds.snu.ac.kr/",
       "has_products": false,
       "classification_status": "classified",
       "products": [],
+      "compact_display_name": "서울대학교",
       "has_survey1": false,
       "has_survey2": false,
       "has_integrated_survey": false,
@@ -9846,7 +11187,9 @@
       "org_id": "ORG00091",
       "display_name": "섹타나인",
       "official_name": "섹타나인",
-      "aliases": [],
+      "aliases": [
+        "(주)섹타나인"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.secta9ine.co.kr",
@@ -10577,6 +11920,122 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00318",
+      "display_name": "숭실대학교",
+      "official_name": "숭실대학교",
+      "aliases": [],
+      "org_type": "기관",
+      "alliance_member_status": "확인 필요",
+      "website": "https://ssu.ac.kr/",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "academic",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00318",
+        "summary": "숭실대학교의 NIA 등록자료에는 AI 보안·안전성·신뢰성과 개인정보 보호가 연구 분야로 기재돼 있다.",
+        "registration_summary": "숭실대학교의 NIA 등록자료에는 AI 보안·안전성·신뢰성과 개인정보 보호가 연구 분야로 기재돼 있다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "ai_trust_security"
+        ],
+        "business_domains": [
+          "developer_tools_it_infrastructure",
+          "other_industry_service"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00318-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00318-S02",
+            "source_type": "official",
+            "label": "공식 자료",
+            "url": "https://aisc.ssu.ac.kr/",
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00318-USR",
+            "source_type": "user_classification",
+            "label": "분류 검토 확정",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00318-S01"
+        ],
+        "registration_source_id": "EPR-ORG00318-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "ai_trust_security",
+            "source_ids": [
+              "EPR-ORG00318-S02"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          },
+          {
+            "field": "business_domains",
+            "code": "developer_tools_it_infrastructure",
+            "source_ids": [
+              "EPR-ORG00318-USR"
+            ],
+            "assignment_basis": "분류 검토 확정"
+          },
+          {
+            "field": "business_domains",
+            "code": "other_industry_service",
+            "source_ids": [
+              "EPR-ORG00318-USR"
+            ],
+            "assignment_basis": "분류 검토 확정"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "숭실대학교의 NIA 등록자료에는 AI 보안·안전성·신뢰성과 개인정보 보호가 연구 분야로 기재돼 있다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000924",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "숭실대학교의 NIA 등록자료에는 AI 보안·안전성·신뢰성과 개인정보 보호가 연구 분야로 기재돼 있다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "ai_trust_security"
+      ],
+      "business_domains": [
+        "developer_tools_it_infrastructure",
+        "other_industry_service"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00285",
       "display_name": "슈어소프트테크",
       "official_name": "슈어소프트테크",
@@ -10648,6 +12107,108 @@
         "not_applicable"
       ],
       "classification_source": "survey",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00324",
+      "display_name": "슈퍼브에이아이",
+      "official_name": "슈퍼브에이아이",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://superb-ai.com",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00324",
+        "summary": "영상과 이미지 데이터를 처리하는 비전 파운데이션 모델 ‘ZERO’와 머신러닝 개발·운영을 지원하는 ‘슈퍼브 플랫폼’을 개발한다.",
+        "registration_summary": "영상과 이미지 데이터를 처리하는 비전 파운데이션 모델 ‘ZERO’와 머신러닝 개발·운영을 지원하는 ‘슈퍼브 플랫폼’을 개발한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "foundation_infrastructure",
+          "agent_builder_framework"
+        ],
+        "business_domains": [
+          "developer_tools_it_infrastructure"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00324-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00324-S01"
+        ],
+        "registration_source_id": "EPR-ORG00324-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "foundation_infrastructure",
+            "source_ids": [
+              "EPR-ORG00324-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "technology_domains",
+            "code": "agent_builder_framework",
+            "source_ids": [
+              "EPR-ORG00324-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "developer_tools_it_infrastructure",
+            "source_ids": [
+              "EPR-ORG00324-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "영상과 이미지 데이터를 처리하는 비전 파운데이션 모델 ‘ZERO’와 머신러닝 개발·운영을 지원하는 ‘슈퍼브 플랫폼’을 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000936",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "영상과 이미지 데이터를 처리하는 비전 파운데이션 모델 ‘ZERO’와 머신러닝 개발·운영을 지원하는 ‘슈퍼브 플랫폼’을 개발한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "foundation_infrastructure",
+        "agent_builder_framework"
+      ],
+      "business_domains": [
+        "developer_tools_it_infrastructure"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
       "classification_completeness": "complete",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
@@ -10900,7 +12461,9 @@
       "org_id": "ORG00097",
       "display_name": "스위트케이",
       "official_name": "스위트케이",
-      "aliases": [],
+      "aliases": [
+        "(주)스위트케이"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.sweetk.co.kr/",
@@ -11019,10 +12582,91 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00321",
+      "display_name": "스위트파워",
+      "official_name": "스위트파워",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://sweetpower.ai",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00321",
+        "summary": "발전·에너지 분야의 업무를 지원하는 AI 솔루션을 개발한다.",
+        "registration_summary": "발전·에너지 분야의 업무를 지원하는 AI 솔루션을 개발한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [],
+        "business_domains": [
+          "energy_power_smartgrid"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00321-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00321-S01"
+        ],
+        "registration_source_id": "EPR-ORG00321-S01",
+        "classification_provenance": [
+          {
+            "field": "business_domains",
+            "code": "energy_power_smartgrid",
+            "source_ids": [
+              "EPR-ORG00321-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "발전·에너지 분야의 업무를 지원하는 AI 솔루션을 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000930",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "발전·에너지 분야의 업무를 지원하는 AI 솔루션을 개발한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [],
+      "business_domains": [
+        "energy_power_smartgrid"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "partial",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00176",
       "display_name": "스카이월드와이드",
       "official_name": "스카이월드와이드",
       "aliases": [
+        "(주)스카이월드와이드",
         "SKAI",
         "SKAI Worldwide"
       ],
@@ -11596,6 +13240,105 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00300",
+      "display_name": "시스원",
+      "official_name": "(주)시스원",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.sysone.co.kr",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00300",
+        "summary": "AI 에이전트 플랫폼을 주요 기술 분야로 두고 있다.",
+        "registration_summary": "AI 에이전트 플랫폼을 주요 기술 분야로 두고 있다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "domain_specific_agent_service"
+        ],
+        "business_domains": [
+          "media_content_entertainment"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00300-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00300-S02",
+            "source_type": "official",
+            "label": "공식 자료",
+            "url": "https://nipa.kr/home/4-4-1/16941",
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00300-S01"
+        ],
+        "registration_source_id": "EPR-ORG00300-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "domain_specific_agent_service",
+            "source_ids": [
+              "EPR-ORG00300-S02"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          },
+          {
+            "field": "business_domains",
+            "code": "media_content_entertainment",
+            "source_ids": [
+              "EPR-ORG00300-S02"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "AI 에이전트 플랫폼을 주요 기술 분야로 두고 있다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000888",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "AI 에이전트 플랫폼을 주요 기술 분야로 두고 있다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "domain_specific_agent_service"
+      ],
+      "business_domains": [
+        "media_content_entertainment"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00275",
       "display_name": "시스윌",
       "official_name": "시스윌",
@@ -11998,7 +13741,9 @@
       "org_id": "ORG00253",
       "display_name": "신한카드",
       "official_name": "신한카드",
-      "aliases": [],
+      "aliases": [
+        "신한카드 주식회사"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://shinhancard.com",
@@ -12313,6 +14058,105 @@
       ],
       "operating_models": [],
       "classification_source": "editorial_research",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00307",
+      "display_name": "심플랫폼",
+      "official_name": "㈜심플랫폼",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.simplatform.com/ko/index.html",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00307",
+        "summary": "‘누비슨 AX(Nubison AX)’ 플랫폼을 개발한다.",
+        "registration_summary": "‘누비슨 AX(Nubison AX)’ 플랫폼을 개발한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "agent_builder_framework"
+        ],
+        "business_domains": [
+          "manufacturing_smart_factory"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00307-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00307-S02",
+            "source_type": "official",
+            "label": "공식 자료",
+            "url": "https://www.simplatform.com/ko/",
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00307-S01"
+        ],
+        "registration_source_id": "EPR-ORG00307-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "agent_builder_framework",
+            "source_ids": [
+              "EPR-ORG00307-S02"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          },
+          {
+            "field": "business_domains",
+            "code": "manufacturing_smart_factory",
+            "source_ids": [
+              "EPR-ORG00307-S02"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "‘누비슨 AX(Nubison AX)’ 플랫폼을 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000902",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "‘누비슨 AX(Nubison AX)’ 플랫폼을 개발한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "agent_builder_framework"
+      ],
+      "business_domains": [
+        "manufacturing_smart_factory"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
       "classification_completeness": "complete",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
@@ -13395,10 +15239,111 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00313",
+      "display_name": "아이젠사이언스",
+      "official_name": "(주)아이젠사이언스",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "http://www.aigensciences.com",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00313",
+        "summary": "인공지능을 활용해 신약 개발을 지원하는 플랫폼을 개발한다.",
+        "registration_summary": "인공지능을 활용해 신약 개발을 지원하는 플랫폼을 개발한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "domain_specific_agent_service"
+        ],
+        "business_domains": [
+          "healthcare_bio_medical"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00313-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00313-S02",
+            "source_type": "official",
+            "label": "공식 자료",
+            "url": "https://aigensciences.com/ai.php",
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00313-S01"
+        ],
+        "registration_source_id": "EPR-ORG00313-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "domain_specific_agent_service",
+            "source_ids": [
+              "EPR-ORG00313-S02"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          },
+          {
+            "field": "business_domains",
+            "code": "healthcare_bio_medical",
+            "source_ids": [
+              "EPR-ORG00313-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "인공지능을 활용해 신약 개발을 지원하는 플랫폼을 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000914",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "인공지능을 활용해 신약 개발을 지원하는 플랫폼을 개발한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "domain_specific_agent_service"
+      ],
+      "business_domains": [
+        "healthcare_bio_medical"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00151",
       "display_name": "아이컴시스",
       "official_name": "아이컴시스",
-      "aliases": [],
+      "aliases": [
+        "주식회사 아이컴시스"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.icomsys.co.kr",
@@ -13499,7 +15444,9 @@
       "org_id": "ORG00243",
       "display_name": "아이티센글로벌",
       "official_name": "아이티센글로벌",
-      "aliases": [],
+      "aliases": [
+        "주식회사 아이티센글로벌"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://itcenglobal.com",
@@ -13926,7 +15873,9 @@
       "org_id": "ORG00239",
       "display_name": "아토랩",
       "official_name": "아토랩",
-      "aliases": [],
+      "aliases": [
+        "아토랩 주식회사"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": null,
@@ -14030,7 +15979,9 @@
       "org_id": "ORG00212",
       "display_name": "안랩클라우드메이트",
       "official_name": "안랩클라우드메이트",
-      "aliases": [],
+      "aliases": [
+        "(주)안랩클라우드메이트"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://ahnlabcloudmate.com/",
@@ -14109,7 +16060,9 @@
       "org_id": "ORG00107",
       "display_name": "알서포트",
       "official_name": "알서포트",
-      "aliases": [],
+      "aliases": [
+        "알서포트 주식회사"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.rsupport.com/ko-kr/",
@@ -14215,7 +16168,9 @@
       "org_id": "ORG00270",
       "display_name": "알체라",
       "official_name": "알체라",
-      "aliases": [],
+      "aliases": [
+        "주식회사 알체라"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.alchera.ai/",
@@ -14601,7 +16556,9 @@
       "org_id": "ORG00241",
       "display_name": "업스테이지",
       "official_name": "업스테이지",
-      "aliases": [],
+      "aliases": [
+        "주식회사 업스테이지"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.upstage.ai/",
@@ -14674,7 +16631,7 @@
     },
     {
       "org_id": "ORG00119",
-      "display_name": "에브리존 | 화이트디펜더",
+      "display_name": "에브리존",
       "official_name": "에브리존 | 화이트디펜더",
       "aliases": [
         "(주)에브리존 | 화이트디펜더"
@@ -14682,9 +16639,26 @@
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.whitedefender.com",
-      "has_products": false,
+      "has_products": true,
       "classification_status": "classified",
-      "products": [],
+      "products": [
+        {
+          "product_id": "PRD000137",
+          "name": "화이트디펜더",
+          "description": null,
+          "core_technology": null,
+          "target_market": null,
+          "competitors": null,
+          "core_competitiveness": null,
+          "differentiation": null,
+          "use_cases": null,
+          "technology_domains": [],
+          "business_domains": [],
+          "business_domain_customs": [],
+          "operating_models": [],
+          "source_type": "user_confirmed"
+        }
+      ],
       "has_survey1": false,
       "has_survey2": false,
       "has_integrated_survey": false,
@@ -16743,6 +18717,122 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00328",
+      "display_name": "엠아이큐브솔루션",
+      "official_name": "엠아이큐브솔루션",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.micube.co.kr",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00328",
+        "summary": "제조 AI와 디지털 트윈 기술을 바탕으로 제조실행시스템과 설비 엔지니어링 시스템 등 생산 관리 솔루션을 개발한다.",
+        "registration_summary": "제조 AI와 디지털 트윈 기술을 바탕으로 제조실행시스템과 설비 엔지니어링 시스템 등 생산 관리 솔루션을 개발한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "agent_builder_framework",
+          "domain_specific_agent_service"
+        ],
+        "business_domains": [
+          "manufacturing_smart_factory"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00328-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00328-S02",
+            "source_type": "official",
+            "label": "공식 자료",
+            "url": "https://www.micube.co.kr/manufacturingai/",
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00328-S03",
+            "source_type": "official",
+            "label": "공식 자료",
+            "url": "https://micube.co.kr/ko/news/view/2115",
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00328-S01"
+        ],
+        "registration_source_id": "EPR-ORG00328-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "agent_builder_framework",
+            "source_ids": [
+              "EPR-ORG00328-S02"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          },
+          {
+            "field": "technology_domains",
+            "code": "domain_specific_agent_service",
+            "source_ids": [
+              "EPR-ORG00328-S03"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          },
+          {
+            "field": "business_domains",
+            "code": "manufacturing_smart_factory",
+            "source_ids": [
+              "EPR-ORG00328-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "제조 AI와 디지털 트윈 기술을 바탕으로 제조실행시스템과 설비 엔지니어링 시스템 등 생산 관리 솔루션을 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000944",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "제조 AI와 디지털 트윈 기술을 바탕으로 제조실행시스템과 설비 엔지니어링 시스템 등 생산 관리 솔루션을 개발한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "agent_builder_framework",
+        "domain_specific_agent_service"
+      ],
+      "business_domains": [
+        "manufacturing_smart_factory"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00269",
       "display_name": "오내피플",
       "official_name": "오내피플",
@@ -17320,6 +19410,98 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00301",
+      "display_name": "오픈랩스",
+      "official_name": "오픈랩스",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://openlabs.co.kr",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00301",
+        "summary": "기업의 소프트웨어 개발 과정을 자동화하는 에이전틱 AI 솔루션을 개발한다.",
+        "registration_summary": "기업의 소프트웨어 개발 과정을 자동화하는 에이전틱 AI 솔루션을 개발한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "domain_specific_agent_service"
+        ],
+        "business_domains": [
+          "developer_tools_it_infrastructure"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00301-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00301-S01"
+        ],
+        "registration_source_id": "EPR-ORG00301-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "domain_specific_agent_service",
+            "source_ids": [
+              "EPR-ORG00301-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "developer_tools_it_infrastructure",
+            "source_ids": [
+              "EPR-ORG00301-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "기업의 소프트웨어 개발 과정을 자동화하는 에이전틱 AI 솔루션을 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000890",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "기업의 소프트웨어 개발 과정을 자동화하는 에이전틱 AI 솔루션을 개발한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "domain_specific_agent_service"
+      ],
+      "business_domains": [
+        "developer_tools_it_infrastructure"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00002",
       "display_name": "온팜",
       "official_name": "온팜",
@@ -17417,7 +19599,9 @@
       "org_id": "ORG00261",
       "display_name": "올거나이즈코리아",
       "official_name": "올거나이즈코리아",
-      "aliases": [],
+      "aliases": [
+        "올거나이즈코리아 주식회사"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.allganize.ai/ko/home",
@@ -17846,7 +20030,9 @@
       "org_id": "ORG00221",
       "display_name": "웨인힐스브라이언트",
       "official_name": "웨인힐스브라이언트 에이아이",
-      "aliases": [],
+      "aliases": [
+        "주식회사 웨인힐스브라이언트 에이아이"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://waynehills.co",
@@ -17923,7 +20109,9 @@
       "org_id": "ORG00258",
       "display_name": "웰로",
       "official_name": "웰로",
-      "aliases": [],
+      "aliases": [
+        "주식회사 웰로"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://wello.info",
@@ -18290,6 +20478,86 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00299",
+      "display_name": "윌로그",
+      "official_name": "(주)윌로그",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://willog.io",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00299",
+        "summary": "AI와 사물인터넷을 활용해 공급망 운영 데이터를 분석하는 솔루션을 개발한다.",
+        "registration_summary": "AI와 사물인터넷을 활용해 공급망 운영 데이터를 분석하는 솔루션을 개발한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [],
+        "business_domains": [
+          "logistics_scm_fulfillment"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00299-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00299-S01"
+        ],
+        "registration_source_id": "EPR-ORG00299-S01",
+        "classification_provenance": [
+          {
+            "field": "business_domains",
+            "code": "logistics_scm_fulfillment",
+            "source_ids": [
+              "EPR-ORG00299-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "AI와 사물인터넷을 활용해 공급망 운영 데이터를 분석하는 솔루션을 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000886",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "AI와 사물인터넷을 활용해 공급망 운영 데이터를 분석하는 솔루션을 개발한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [],
+      "business_domains": [
+        "logistics_scm_fulfillment"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "partial",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00039",
       "display_name": "유니버스에이아이",
       "official_name": "유니버스에이아이",
@@ -18537,7 +20805,9 @@
       "org_id": "ORG00218",
       "display_name": "유모스원",
       "official_name": "유모스원",
-      "aliases": [],
+      "aliases": [
+        "주식회사 유모스원"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.umosone.ai",
@@ -18811,6 +21081,86 @@
       "operating_models": [],
       "classification_source": "editorial_research",
       "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00317",
+      "display_name": "유엔젤",
+      "official_name": "유엔젤",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.uangel.com/kr/",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00317",
+        "summary": "제조 현장과 선박에서 발생하는 데이터를 수집하는 플랫폼 기술을 개발한다.",
+        "registration_summary": "제조 현장과 선박에서 발생하는 데이터를 수집하는 플랫폼 기술을 개발한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [],
+        "business_domains": [
+          "manufacturing_smart_factory"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00317-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00317-S01"
+        ],
+        "registration_source_id": "EPR-ORG00317-S01",
+        "classification_provenance": [
+          {
+            "field": "business_domains",
+            "code": "manufacturing_smart_factory",
+            "source_ids": [
+              "EPR-ORG00317-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "제조 현장과 선박에서 발생하는 데이터를 수집하는 플랫폼 기술을 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000922",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "제조 현장과 선박에서 발생하는 데이터를 수집하는 플랫폼 기술을 개발한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [],
+      "business_domains": [
+        "manufacturing_smart_factory"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "partial",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
       "parent_organization": null
@@ -19263,7 +21613,7 @@
       "official_name": "이니넥스트",
       "aliases": [],
       "org_type": "사업자",
-      "alliance_member_status": "회원사",
+      "alliance_member_status": "비회원사",
       "website": "https://www.ininext.com/",
       "has_products": true,
       "classification_status": "classified",
@@ -19330,6 +21680,47 @@
       ],
       "classification_source": "survey",
       "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": "ORG00320",
+      "parent_organization": {
+        "org_id": "ORG00320",
+        "display_name": "이니텍",
+        "website": "https://www.initech.com",
+        "visibility": "listed"
+      }
+    },
+    {
+      "org_id": "ORG00320",
+      "display_name": "이니텍",
+      "official_name": "이니텍",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.initech.com",
+      "has_products": false,
+      "classification_status": "unclassified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": null,
+      "company_profile": {
+        "summary": null,
+        "source_type": null,
+        "source_label": null,
+        "status": "missing",
+        "company_confirmed": false,
+        "sources": [],
+        "checked_at": "2026-11-26"
+      },
+      "summary": null,
+      "summary_source": null,
+      "technology_domains": [],
+      "business_domains": [],
+      "operating_models": [],
+      "classification_source": null,
+      "classification_completeness": "none",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
       "parent_organization": null
@@ -20132,7 +22523,9 @@
       "org_id": "ORG00170",
       "display_name": "인스웨이브",
       "official_name": "인스웨이브",
-      "aliases": [],
+      "aliases": [
+        "주식회사 인스웨이브시스템즈"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.inswave.com",
@@ -20390,10 +22783,104 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00298",
+      "display_name": "인핸스",
+      "official_name": "주식회사 인핸스",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.enhans.ai",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00298",
+        "summary": "온톨로지 기반의 기업용 AI 에이전트 운영체제 ‘AgentOS’를 개발한다.",
+        "registration_summary": "온톨로지 기반의 기업용 AI 에이전트 운영체제 ‘AgentOS’를 개발한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "agent_builder_framework"
+        ],
+        "business_domains": [
+          "general_enterprise"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00298-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00298-S01"
+        ],
+        "registration_source_id": "EPR-ORG00298-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "agent_builder_framework",
+            "source_ids": [
+              "EPR-ORG00298-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "general_enterprise",
+            "source_ids": [
+              "EPR-ORG00298-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "온톨로지 기반의 기업용 AI 에이전트 운영체제 ‘AgentOS’를 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000884",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "온톨로지 기반의 기업용 AI 에이전트 운영체제 ‘AgentOS’를 개발한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "agent_builder_framework"
+      ],
+      "business_domains": [
+        "general_enterprise"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00234",
       "display_name": "일루넥스",
       "official_name": "일루넥스",
-      "aliases": [],
+      "aliases": [
+        "(주)일루넥스"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://illunex.com/",
@@ -20571,7 +23058,9 @@
       "org_id": "ORG00148",
       "display_name": "제네시스랩",
       "official_name": "제네시스랩",
-      "aliases": [],
+      "aliases": [
+        "주식회사 제네시스랩"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.genesislab.ai",
@@ -20670,6 +23159,118 @@
         "multi_agent_collaboration"
       ],
       "classification_source": "survey",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00316",
+      "display_name": "제논",
+      "official_name": "제논",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.genon.ai/",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00316",
+        "summary": "기업용 에이전틱 AI 플랫폼 ‘GenOS’를 개발하며, 기업의 AI 도입을 위한 컨설팅과 에이전트 구축을 지원한다.",
+        "registration_summary": "기업용 에이전틱 AI 플랫폼 ‘GenOS’를 개발하며, 기업의 AI 도입을 위한 컨설팅과 에이전트 구축을 지원한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "agent_builder_framework"
+        ],
+        "business_domains": [
+          "healthcare_bio_medical",
+          "finance_insurance_fintech",
+          "energy_power_smartgrid"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00316-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00316-S01"
+        ],
+        "registration_source_id": "EPR-ORG00316-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "agent_builder_framework",
+            "source_ids": [
+              "EPR-ORG00316-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "healthcare_bio_medical",
+            "source_ids": [
+              "EPR-ORG00316-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "finance_insurance_fintech",
+            "source_ids": [
+              "EPR-ORG00316-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "energy_power_smartgrid",
+            "source_ids": [
+              "EPR-ORG00316-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "기업용 에이전틱 AI 플랫폼 ‘GenOS’를 개발하며, 기업의 AI 도입을 위한 컨설팅과 에이전트 구축을 지원한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000920",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "기업용 에이전틱 AI 플랫폼 ‘GenOS’를 개발하며, 기업의 AI 도입을 위한 컨설팅과 에이전트 구축을 지원한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "agent_builder_framework"
+      ],
+      "business_domains": [
+        "healthcare_bio_medical",
+        "finance_insurance_fintech",
+        "energy_power_smartgrid"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
       "classification_completeness": "complete",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
@@ -20913,10 +23514,114 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00311",
+      "display_name": "지란지교소프트",
+      "official_name": "주식회사 지란지교소프트",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.jiransoft.co.kr",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00311",
+        "summary": "문서와 지식 검색을 위한 검색증강생성(RAG), 프라이빗 대규모 언어모델, AI 문자 인식 및 개인정보 비식별 기술을 개발한다. 주요 솔루션은 오피스에이전트, AX웍스, AI필터다.",
+        "registration_summary": "문서와 지식 검색을 위한 검색증강생성(RAG), 프라이빗 대규모 언어모델, AI 문자 인식 및 개인정보 비식별 기술을 개발한다. 주요 솔루션은 오피스에이전트, AX웍스, AI필터다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "domain_specific_agent_service",
+          "ai_trust_security"
+        ],
+        "business_domains": [
+          "general_enterprise"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00311-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00311-S01"
+        ],
+        "registration_source_id": "EPR-ORG00311-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "domain_specific_agent_service",
+            "source_ids": [
+              "EPR-ORG00311-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "technology_domains",
+            "code": "ai_trust_security",
+            "source_ids": [
+              "EPR-ORG00311-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "general_enterprise",
+            "source_ids": [
+              "EPR-ORG00311-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "문서와 지식 검색을 위한 검색증강생성(RAG), 프라이빗 대규모 언어모델, AI 문자 인식 및 개인정보 비식별 기술을 개발한다. 주요 솔루션은 오피스에이전트, AX웍스, AI필터다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000910",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "문서와 지식 검색을 위한 검색증강생성(RAG), 프라이빗 대규모 언어모델, AI 문자 인식 및 개인정보 비식별 기술을 개발한다. 주요 솔루션은 오피스에이전트, AX웍스, AI필터다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "domain_specific_agent_service",
+        "ai_trust_security"
+      ],
+      "business_domains": [
+        "general_enterprise"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00204",
       "display_name": "지엔소프트",
       "official_name": "지엔소프트",
-      "aliases": [],
+      "aliases": [
+        "지엔소프트㈜"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "http://www.gn-soft.co.kr/gns/html/index.html",
@@ -21318,8 +24023,8 @@
         "카카오엔터프라이즈 / kakaoenterprise"
       ],
       "org_type": "사업자",
-      "alliance_member_status": "비회원사",
-      "website": "https://kakaoenterprise.com/",
+      "alliance_member_status": "회원사",
+      "website": "https://www.kakaocloud.com",
       "has_products": true,
       "classification_status": "classified",
       "products": [
@@ -21947,6 +24652,108 @@
       "parent_organization": null
     },
     {
+      "org_id": "ORG00310",
+      "display_name": "케이티클라우드",
+      "official_name": "케이티클라우드",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://cloud.kt.com/",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00310",
+        "summary": "GPU 서버를 비롯해 챗봇, 검색증강생성(RAG), AI API, 벡터 데이터베이스 등 기업의 AI 도입을 지원하는 기술을 제공한다.",
+        "registration_summary": "GPU 서버를 비롯해 챗봇, 검색증강생성(RAG), AI API, 벡터 데이터베이스 등 기업의 AI 도입을 지원하는 기술을 제공한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "foundation_infrastructure",
+          "agent_builder_framework"
+        ],
+        "business_domains": [
+          "developer_tools_it_infrastructure"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00310-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00310-S01"
+        ],
+        "registration_source_id": "EPR-ORG00310-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "foundation_infrastructure",
+            "source_ids": [
+              "EPR-ORG00310-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "technology_domains",
+            "code": "agent_builder_framework",
+            "source_ids": [
+              "EPR-ORG00310-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "developer_tools_it_infrastructure",
+            "source_ids": [
+              "EPR-ORG00310-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "GPU 서버를 비롯해 챗봇, 검색증강생성(RAG), AI API, 벡터 데이터베이스 등 기업의 AI 도입을 지원하는 기술을 제공한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000908",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "GPU 서버를 비롯해 챗봇, 검색증강생성(RAG), AI API, 벡터 데이터베이스 등 기업의 AI 도입을 지원하는 기술을 제공한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "foundation_infrastructure",
+        "agent_builder_framework"
+      ],
+      "business_domains": [
+        "developer_tools_it_infrastructure"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
       "org_id": "ORG00011",
       "display_name": "케파스",
       "official_name": "케파스",
@@ -22439,6 +25246,105 @@
       ],
       "operating_models": [],
       "classification_source": "editorial_research",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00312",
+      "display_name": "코스콤",
+      "official_name": "(주)코스콤",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.koscom.co.kr",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00312",
+        "summary": "금융권 폐쇄망에서 AI 에이전트를 개발·운영할 수 있는 기반을 구축하고, 사내 업무에 에이전트를 적용하는 실증을 진행했다.",
+        "registration_summary": "금융권 폐쇄망에서 AI 에이전트를 개발·운영할 수 있는 기반을 구축하고, 사내 업무에 에이전트를 적용하는 실증을 진행했다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "foundation_infrastructure"
+        ],
+        "business_domains": [
+          "finance_insurance_fintech"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00312-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          },
+          {
+            "source_id": "EPR-ORG00312-S02",
+            "source_type": "official",
+            "label": "공식 자료",
+            "url": "https://www.koscom.co.kr/portal/bbs/B0000064/view.do?delcode=0&deptId=&edate=&gubun=&ise=&isk=&menuNo=&nttId=30876&pageIndex=1&replyAt=&sdate=&searchBgnDe=&searchCnd=&searchEndDe=&searchWrd=&type=list&useAt=&viewType=&year=",
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00312-S01"
+        ],
+        "registration_source_id": "EPR-ORG00312-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "foundation_infrastructure",
+            "source_ids": [
+              "EPR-ORG00312-S02"
+            ],
+            "assignment_basis": "공개 자료 보완"
+          },
+          {
+            "field": "business_domains",
+            "code": "finance_insurance_fintech",
+            "source_ids": [
+              "EPR-ORG00312-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "금융권 폐쇄망에서 AI 에이전트를 개발·운영할 수 있는 기반을 구축하고, 사내 업무에 에이전트를 적용하는 실증을 진행했다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000912",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "금융권 폐쇄망에서 AI 에이전트를 개발·운영할 수 있는 기반을 구축하고, 사내 업무에 에이전트를 적용하는 실증을 진행했다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "foundation_infrastructure"
+      ],
+      "business_domains": [
+        "finance_insurance_fintech"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
       "classification_completeness": "complete",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
@@ -23869,7 +26775,9 @@
       "org_id": "ORG00178",
       "display_name": "탑코어시스템",
       "official_name": "탑코어시스템",
-      "aliases": [],
+      "aliases": [
+        "주식회사 탑코어시스템"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://topcore.co.kr",
@@ -24415,7 +27323,9 @@
       "org_id": "ORG00246",
       "display_name": "티맥스소프트",
       "official_name": "티맥스소프트",
-      "aliases": [],
+      "aliases": [
+        "(주)티맥스소프트"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.tmaxsoft.com",
@@ -25033,6 +27943,108 @@
         "assistant_process_automation"
       ],
       "classification_source": "survey",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00323",
+      "display_name": "퍼블릭아이디",
+      "official_name": "주식회사 퍼블릭아이디",
+      "aliases": [],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "https://www.public-id.co.kr",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00323",
+        "summary": "기업 정보와 공공 입찰 공고를 조회할 수 있는 공개 디렉터리 ‘보임’을 운영한다. AI 에이전트용 조회 기능과 기업 맞춤형 업무 시스템 ‘우리회사OS’를 제공한다.",
+        "registration_summary": "기업 정보와 공공 입찰 공고를 조회할 수 있는 공개 디렉터리 ‘보임’을 운영한다. AI 에이전트용 조회 기능과 기업 맞춤형 업무 시스템 ‘우리회사OS’를 제공한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "agent_builder_framework"
+        ],
+        "business_domains": [
+          "public_safety_defense",
+          "general_enterprise"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00323-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00323-S01"
+        ],
+        "registration_source_id": "EPR-ORG00323-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "agent_builder_framework",
+            "source_ids": [
+              "EPR-ORG00323-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "public_safety_defense",
+            "source_ids": [
+              "EPR-ORG00323-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "general_enterprise",
+            "source_ids": [
+              "EPR-ORG00323-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "기업 정보와 공공 입찰 공고를 조회할 수 있는 공개 디렉터리 ‘보임’을 운영한다. AI 에이전트용 조회 기능과 기업 맞춤형 업무 시스템 ‘우리회사OS’를 제공한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000934",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "기업 정보와 공공 입찰 공고를 조회할 수 있는 공개 디렉터리 ‘보임’을 운영한다. AI 에이전트용 조회 기능과 기업 맞춤형 업무 시스템 ‘우리회사OS’를 제공한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "agent_builder_framework"
+      ],
+      "business_domains": [
+        "public_safety_defense",
+        "general_enterprise"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
       "classification_completeness": "complete",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
@@ -25771,7 +28783,9 @@
       "org_id": "ORG00248",
       "display_name": "폴라리스오피스",
       "official_name": "폴라리스오피스",
-      "aliases": [],
+      "aliases": [
+        "주식회사 폴라리스오피스"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.polarisoffice.com",
@@ -25882,7 +28896,9 @@
       "org_id": "ORG00087",
       "display_name": "퓨리오사AI",
       "official_name": "퓨리오사AI",
-      "aliases": [],
+      "aliases": [
+        "주식회사 퓨리오사에이아이"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://furiosa.ai",
@@ -26060,7 +29076,9 @@
       "org_id": "ORG00207",
       "display_name": "플리토",
       "official_name": "플리토",
-      "aliases": [],
+      "aliases": [
+        "주식회사 플리토"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.flitto.com",
@@ -26139,7 +29157,9 @@
       "org_id": "ORG00271",
       "display_name": "피앤피시큐어",
       "official_name": "피앤피시큐어",
-      "aliases": [],
+      "aliases": [
+        "주식회사 피앤피시큐어"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.pnpsecure.com/",
@@ -26396,7 +29416,9 @@
       "org_id": "ORG00099",
       "display_name": "한국AI스마트홈산업협회",
       "official_name": "한국AI스마트홈산업협회",
-      "aliases": [],
+      "aliases": [
+        "사단법인 한국AI스마트홈산업협회"
+      ],
       "org_type": "기관",
       "alliance_member_status": "회원사",
       "website": "https://www.kashi.or.kr",
@@ -26914,7 +29936,9 @@
       "org_id": "ORG00086",
       "display_name": "한국디지털인증협회",
       "official_name": "한국디지털인증협회",
-      "aliases": [],
+      "aliases": [
+        "사단법인 한국디지털인증협회"
+      ],
       "org_type": "기관",
       "alliance_member_status": "회원사",
       "website": "https://opendid.org/",
@@ -27143,6 +30167,86 @@
       ],
       "classification_source": "survey",
       "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
+    },
+    {
+      "org_id": "ORG00315",
+      "display_name": "한국장애인개발원",
+      "official_name": "한국장애인개발원",
+      "aliases": [],
+      "org_type": "기관",
+      "alliance_member_status": "회원사",
+      "website": "https://www.koddi.or.kr/",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "adopter_operator",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00315",
+        "summary": "챗봇 ‘챗코디’와 장애통계데이터포털을 통해 장애 관련 정보와 통계를 제공한다.",
+        "registration_summary": "챗봇 ‘챗코디’와 장애통계데이터포털을 통해 장애 관련 정보와 통계를 제공한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [],
+        "business_domains": [
+          "public_safety_defense"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00315-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00315-S01"
+        ],
+        "registration_source_id": "EPR-ORG00315-S01",
+        "classification_provenance": [
+          {
+            "field": "business_domains",
+            "code": "public_safety_defense",
+            "source_ids": [
+              "EPR-ORG00315-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "챗봇 ‘챗코디’와 장애통계데이터포털을 통해 장애 관련 정보와 통계를 제공한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000918",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "챗봇 ‘챗코디’와 장애통계데이터포털을 통해 장애 관련 정보와 통계를 제공한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [],
+      "business_domains": [
+        "public_safety_defense"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "partial",
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
       "parent_organization": null
@@ -27390,7 +30494,9 @@
       "org_id": "ORG00250",
       "display_name": "한국정보산업연합회",
       "official_name": "한국정보산업연합회",
-      "aliases": [],
+      "aliases": [
+        "사단법인 한국정보산업연합회"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.fkii.org/",
@@ -27538,7 +30644,9 @@
       "org_id": "ORG00146",
       "display_name": "한국키네티코엔지니어링",
       "official_name": "한국키네티코엔지니어링",
-      "aliases": [],
+      "aliases": [
+        "(주)한국키네티코엔지니어링"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://osgloture.org",
@@ -27857,7 +30965,9 @@
       "org_id": "ORG00200",
       "display_name": "한솔코에버",
       "official_name": "한솔코에버",
-      "aliases": [],
+      "aliases": [
+        "한솔코에버㈜"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.coever.co.kr",
@@ -28069,7 +31179,9 @@
       "org_id": "ORG00106",
       "display_name": "한컴",
       "official_name": "한컴",
-      "aliases": [],
+      "aliases": [
+        "㈜한글과컴퓨터"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.hancom.com",
@@ -28168,7 +31280,9 @@
       "org_id": "ORG00244",
       "display_name": "한컴인스페이스",
       "official_name": "한컴인스페이스",
-      "aliases": [],
+      "aliases": [
+        "(주)한컴인스페이스"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://www.inspace.co.kr/",
@@ -28356,7 +31470,9 @@
       "org_id": "ORG00092",
       "display_name": "현대퓨처넷",
       "official_name": "현대퓨처넷",
-      "aliases": [],
+      "aliases": [
+        "(주)현대퓨처넷"
+      ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
       "website": "https://hyundaifuturenet.com",
@@ -28487,7 +31603,8 @@
       "display_name": "혜움",
       "official_name": "혜움",
       "aliases": [
-        "(주)혜움"
+        "(주)혜움",
+        "주식회사 알프레드"
       ],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
@@ -28602,7 +31719,7 @@
       "aliases": [],
       "org_type": "사업자",
       "alliance_member_status": "회원사",
-      "website": null,
+      "website": "https://.",
       "has_products": false,
       "classification_status": "classified",
       "products": [],
@@ -28696,6 +31813,100 @@
       "classification_applicability": "product_or_service",
       "parent_org_id": null,
       "parent_organization": null
+    },
+    {
+      "org_id": "ORG00304",
+      "display_name": "히츠",
+      "official_name": "주식회사 히츠 (HITS Inc.)",
+      "aliases": [
+        "히츠 (HITS Inc.)"
+      ],
+      "org_type": "사업자",
+      "alliance_member_status": "회원사",
+      "website": "http://hits.ai",
+      "has_products": false,
+      "classification_status": "classified",
+      "products": [],
+      "has_survey1": false,
+      "has_survey2": false,
+      "has_integrated_survey": false,
+      "ecosystem_role": "business_provider",
+      "editorial_profile": {
+        "profile_id": "EPR-ORG00304",
+        "summary": "신약 개발과 연구 업무에 AI를 적용하며, AI 연구 지원 솔루션 ‘하이퍼랩(HyperLab)’을 개발한다.",
+        "registration_summary": "신약 개발과 연구 업무에 AI를 적용하며, AI 연구 지원 솔루션 ‘하이퍼랩(HyperLab)’을 개발한다.",
+        "source_type": "nia_registration",
+        "company_confirmed": false,
+        "technology_domains": [
+          "domain_specific_agent_service"
+        ],
+        "business_domains": [
+          "healthcare_bio_medical"
+        ],
+        "operating_models": [],
+        "sources": [
+          {
+            "source_id": "EPR-ORG00304-S01",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "summary_source_ids": [
+          "EPR-ORG00304-S01"
+        ],
+        "registration_source_id": "EPR-ORG00304-S01",
+        "classification_provenance": [
+          {
+            "field": "technology_domains",
+            "code": "domain_specific_agent_service",
+            "source_ids": [
+              "EPR-ORG00304-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          },
+          {
+            "field": "business_domains",
+            "code": "healthcare_bio_medical",
+            "source_ids": [
+              "EPR-ORG00304-S01"
+            ],
+            "assignment_basis": "NIA 3.0 등록자료"
+          }
+        ]
+      },
+      "company_profile": {
+        "summary": "신약 개발과 연구 업무에 AI를 적용하며, AI 연구 지원 솔루션 ‘하이퍼랩(HyperLab)’을 개발한다.",
+        "source_type": "nia_registration",
+        "source_label": "NIA 3.0 등록자료",
+        "status": "available",
+        "company_confirmed": false,
+        "sources": [
+          {
+            "source_id": "OTX000896",
+            "source_type": "nia_registration",
+            "label": "NIA 3.0 등록자료",
+            "url": null,
+            "checked_at": "2026-11-27"
+          }
+        ],
+        "checked_at": "2026-11-27"
+      },
+      "summary": "신약 개발과 연구 업무에 AI를 적용하며, AI 연구 지원 솔루션 ‘하이퍼랩(HyperLab)’을 개발한다.",
+      "summary_source": "nia_registration",
+      "technology_domains": [
+        "domain_specific_agent_service"
+      ],
+      "business_domains": [
+        "healthcare_bio_medical"
+      ],
+      "operating_models": [],
+      "classification_source": "nia_registration",
+      "classification_completeness": "complete",
+      "classification_applicability": "product_or_service",
+      "parent_org_id": null,
+      "parent_organization": null
     }
   ],
   "related_organizations": [
@@ -28732,16 +31943,16 @@
       "profile_id": "EPR-ORG00211"
     },
     {
+      "entry_id": "organization:ORG00302",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00302",
+      "profile_id": "EPR-ORG00302"
+    },
+    {
       "entry_id": "product:PRD000018",
       "entry_type": "product",
       "org_id": "ORG00255",
       "product_id": "PRD000018"
-    },
-    {
-      "entry_id": "product:PRD000099",
-      "entry_type": "product",
-      "org_id": "ORG00290",
-      "product_id": "PRD000099"
     },
     {
       "entry_id": "product:PRD000009",
@@ -28750,10 +31961,22 @@
       "product_id": "PRD000009"
     },
     {
+      "entry_id": "organization:ORG00306",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00306",
+      "profile_id": "EPR-ORG00306"
+    },
+    {
       "entry_id": "organization:ORG00121",
       "entry_type": "organization_profile",
       "org_id": "ORG00121",
       "profile_id": "EPR-ORG00121"
+    },
+    {
+      "entry_id": "organization:ORG00327",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00327",
+      "profile_id": "EPR-ORG00327"
     },
     {
       "entry_id": "organization:ORG00118",
@@ -28810,6 +32033,18 @@
       "product_id": "PRD000071"
     },
     {
+      "entry_id": "organization:ORG00326",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00326",
+      "profile_id": "EPR-ORG00326"
+    },
+    {
+      "entry_id": "organization:ORG00329",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00329",
+      "profile_id": "EPR-ORG00329"
+    },
+    {
       "entry_id": "organization:ORG00021",
       "entry_type": "organization_profile",
       "org_id": "ORG00021",
@@ -28826,6 +32061,12 @@
       "entry_type": "organization_profile",
       "org_id": "ORG00257",
       "profile_id": "EPR-ORG00257"
+    },
+    {
+      "entry_id": "organization:ORG00303",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00303",
+      "profile_id": "EPR-ORG00303"
     },
     {
       "entry_id": "organization:ORG00131",
@@ -28876,6 +32117,12 @@
       "profile_id": "EPR-ORG00279"
     },
     {
+      "entry_id": "organization:ORG00322",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00322",
+      "profile_id": "EPR-ORG00322"
+    },
+    {
       "entry_id": "product:PRD000102",
       "entry_type": "product",
       "org_id": "ORG00104",
@@ -28904,6 +32151,12 @@
       "entry_type": "organization_profile",
       "org_id": "ORG00008",
       "profile_id": "EPR-ORG00008"
+    },
+    {
+      "entry_id": "organization:ORG00305",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00305",
+      "profile_id": "EPR-ORG00305"
     },
     {
       "entry_id": "product:PRD000035",
@@ -29056,6 +32309,12 @@
       "profile_id": "EPR-ORG00114"
     },
     {
+      "entry_id": "organization:ORG00308",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00308",
+      "profile_id": "EPR-ORG00308"
+    },
+    {
       "entry_id": "product:PRD000055",
       "entry_type": "product",
       "org_id": "ORG00067",
@@ -29096,6 +32355,18 @@
       "entry_type": "product",
       "org_id": "ORG00206",
       "product_id": "PRD000086"
+    },
+    {
+      "entry_id": "product:PRD000099",
+      "entry_type": "product",
+      "org_id": "ORG00290",
+      "product_id": "PRD000099"
+    },
+    {
+      "entry_id": "organization:ORG00314",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00314",
+      "profile_id": "EPR-ORG00314"
     },
     {
       "entry_id": "product:PRD000053",
@@ -29242,10 +32513,22 @@
       "profile_id": "EPR-ORG00113"
     },
     {
+      "entry_id": "organization:ORG00325",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00325",
+      "profile_id": "EPR-ORG00325"
+    },
+    {
       "entry_id": "organization:ORG00203",
       "entry_type": "organization_profile",
       "org_id": "ORG00203",
       "profile_id": "EPR-ORG00203"
+    },
+    {
+      "entry_id": "organization:ORG00319",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00319",
+      "profile_id": "EPR-ORG00319"
     },
     {
       "entry_id": "organization:ORG00020",
@@ -29288,6 +32571,12 @@
       "entry_type": "organization_profile",
       "org_id": "ORG00128",
       "profile_id": "EPR-ORG00128"
+    },
+    {
+      "entry_id": "organization:ORG00309",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00309",
+      "profile_id": "EPR-ORG00309"
     },
     {
       "entry_id": "organization:ORG00233",
@@ -29392,10 +32681,22 @@
       "profile_id": "EPR-ORG00143"
     },
     {
+      "entry_id": "organization:ORG00318",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00318",
+      "profile_id": "EPR-ORG00318"
+    },
+    {
       "entry_id": "product:PRD000100",
       "entry_type": "product",
       "org_id": "ORG00285",
       "product_id": "PRD000100"
+    },
+    {
+      "entry_id": "organization:ORG00324",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00324",
+      "profile_id": "EPR-ORG00324"
     },
     {
       "entry_id": "organization:ORG00181",
@@ -29414,6 +32715,12 @@
       "entry_type": "organization_profile",
       "org_id": "ORG00097",
       "profile_id": "EPR-ORG00097"
+    },
+    {
+      "entry_id": "organization:ORG00321",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00321",
+      "profile_id": "EPR-ORG00321"
     },
     {
       "entry_id": "product:PRD000030",
@@ -29458,6 +32765,12 @@
       "product_id": "PRD000027"
     },
     {
+      "entry_id": "organization:ORG00300",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00300",
+      "profile_id": "EPR-ORG00300"
+    },
+    {
       "entry_id": "organization:ORG00275",
       "entry_type": "organization_profile",
       "org_id": "ORG00275",
@@ -29498,6 +32811,12 @@
       "entry_type": "organization_profile",
       "org_id": "ORG00184",
       "profile_id": "EPR-ORG00184"
+    },
+    {
+      "entry_id": "organization:ORG00307",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00307",
+      "profile_id": "EPR-ORG00307"
     },
     {
       "entry_id": "organization:ORG00222",
@@ -29576,6 +32895,12 @@
       "entry_type": "organization_profile",
       "org_id": "ORG00142",
       "profile_id": "EPR-ORG00142"
+    },
+    {
+      "entry_id": "organization:ORG00313",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00313",
+      "profile_id": "EPR-ORG00313"
     },
     {
       "entry_id": "organization:ORG00151",
@@ -29660,6 +32985,12 @@
       "entry_type": "product",
       "org_id": "ORG00241",
       "product_id": "PRD000125"
+    },
+    {
+      "entry_id": "product:PRD000137",
+      "entry_type": "product",
+      "org_id": "ORG00119",
+      "product_id": "PRD000137"
     },
     {
       "entry_id": "organization:ORG00119",
@@ -29788,6 +33119,12 @@
       "product_id": "PRD000073"
     },
     {
+      "entry_id": "organization:ORG00328",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00328",
+      "profile_id": "EPR-ORG00328"
+    },
+    {
       "entry_id": "product:PRD000020",
       "entry_type": "product",
       "org_id": "ORG00269",
@@ -29822,6 +33159,12 @@
       "entry_type": "organization_profile",
       "org_id": "ORG00154",
       "profile_id": "EPR-ORG00154"
+    },
+    {
+      "entry_id": "organization:ORG00301",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00301",
+      "profile_id": "EPR-ORG00301"
     },
     {
       "entry_id": "organization:ORG00002",
@@ -29890,6 +33233,12 @@
       "product_id": "PRD000090"
     },
     {
+      "entry_id": "organization:ORG00299",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00299",
+      "profile_id": "EPR-ORG00299"
+    },
+    {
       "entry_id": "organization:ORG00039",
       "entry_type": "organization_profile",
       "org_id": "ORG00039",
@@ -29918,6 +33267,12 @@
       "entry_type": "organization_profile",
       "org_id": "ORG00049",
       "profile_id": "EPR-ORG00049"
+    },
+    {
+      "entry_id": "organization:ORG00317",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00317",
+      "profile_id": "EPR-ORG00317"
     },
     {
       "entry_id": "product:PRD000105",
@@ -30028,6 +33383,12 @@
       "product_id": "PRD000015"
     },
     {
+      "entry_id": "organization:ORG00298",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00298",
+      "profile_id": "EPR-ORG00298"
+    },
+    {
       "entry_id": "organization:ORG00234",
       "entry_type": "organization_profile",
       "org_id": "ORG00234",
@@ -30052,6 +33413,12 @@
       "product_id": "PRD000057"
     },
     {
+      "entry_id": "organization:ORG00316",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00316",
+      "profile_id": "EPR-ORG00316"
+    },
+    {
       "entry_id": "product:PRD000069",
       "entry_type": "product",
       "org_id": "ORG00056",
@@ -30068,6 +33435,12 @@
       "entry_type": "product",
       "org_id": "ORG00220",
       "product_id": "PRD000022"
+    },
+    {
+      "entry_id": "organization:ORG00311",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00311",
+      "profile_id": "EPR-ORG00311"
     },
     {
       "entry_id": "organization:ORG00204",
@@ -30130,6 +33503,12 @@
       "profile_id": "EPR-ORG00210"
     },
     {
+      "entry_id": "organization:ORG00310",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00310",
+      "profile_id": "EPR-ORG00310"
+    },
+    {
       "entry_id": "organization:ORG00011",
       "entry_type": "organization_profile",
       "org_id": "ORG00011",
@@ -30158,6 +33537,12 @@
       "entry_type": "organization_profile",
       "org_id": "ORG00185",
       "profile_id": "EPR-ORG00185"
+    },
+    {
+      "entry_id": "organization:ORG00312",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00312",
+      "profile_id": "EPR-ORG00312"
     },
     {
       "entry_id": "organization:ORG00029",
@@ -30316,6 +33701,12 @@
       "product_id": "PRD000062"
     },
     {
+      "entry_id": "organization:ORG00323",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00323",
+      "profile_id": "EPR-ORG00323"
+    },
+    {
       "entry_id": "organization:ORG00060",
       "entry_type": "organization_profile",
       "org_id": "ORG00060",
@@ -30448,6 +33839,12 @@
       "product_id": "PRD000013"
     },
     {
+      "entry_id": "organization:ORG00315",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00315",
+      "profile_id": "EPR-ORG00315"
+    },
+    {
       "entry_id": "organization:ORG00197",
       "entry_type": "organization_profile",
       "org_id": "ORG00197",
@@ -30542,6 +33939,12 @@
       "entry_type": "organization_profile",
       "org_id": "ORG00277",
       "profile_id": "EPR-ORG00277"
+    },
+    {
+      "entry_id": "organization:ORG00304",
+      "entry_type": "organization_profile",
+      "org_id": "ORG00304",
+      "profile_id": "EPR-ORG00304"
     }
   ]
 }

@@ -97,7 +97,6 @@ class App {
       this.buildFilterCheckboxes();
 
       // 5. 하단 미분류 기업 아코디언 채우기
-      this.renderUnclassifiedAccordion();
 
       // 6. 이벤트 리스너 바인딩
       this.bindEvents();
@@ -424,7 +423,7 @@ class App {
     chip.className = this.hasSurveyResponse(org)
       ? "compact-org-chip has-survey"
       : "compact-org-chip";
-    chip.textContent = org.display_name || "";
+    chip.textContent = org.compact_display_name || org.display_name || "";
     chip.setAttribute("aria-label", `${org.display_name} 상세 정보 보기`);
 
     const openHandler = () => {
@@ -636,6 +635,7 @@ class App {
 
     // 4. 미분류 기업 검색어 일치 결과 별도 섹션
     this.renderUnclassifiedSearchMatches();
+    this.renderUnclassifiedAccordion();
   }
 
   /**
