@@ -3,7 +3,7 @@
 
 export const APP_CONFIG = {
   // true: 비밀번호 잠금 활성화 / false: 전체 공개 전환
-  GATE_ENABLED: true,
+  GATE_ENABLED: false,
 
   // 솔트 키 (레인보우 테이블 및 사전 공격 무력화)
   SALT: "admin*",
